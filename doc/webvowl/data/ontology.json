@@ -1,0 +1,1786 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "baseIris" : [ "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2003/01/geo/wgs84_pos", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "9",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "instances" : 0,
+    "intersection" : [ "10", "1", "7", "11", "12" ],
+    "attributes" : [ "anonymous", "intersection" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bike"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike071",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Bike071"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike087",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Bike087"
+      }
+    } ],
+    "id" : "15",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#LuxuryHotel",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LuxuryHotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel077",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Hotel077"
+      }
+    } ],
+    "id" : "17",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Tramway",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tramway"
+    },
+    "id" : "35",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Taxi"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi064",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Taxi064"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi041",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Taxi041"
+      }
+    } ],
+    "id" : "41",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BussinessHotel",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BussinessHotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel064",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Hotel064"
+      }
+    } ],
+    "id" : "23",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "Integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "instances" : 0,
+    "intersection" : [ "28", "10", "1", "7", "11", "12" ],
+    "attributes" : [ "anonymous", "intersection" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RestauranType",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RestauranType"
+    },
+    "id" : "62",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Subway",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Subway"
+    },
+    "id" : "67",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "Integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "id" : "77",
+    "label" : {
+      "IRI-based" : "Rate"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "SpatialThing/lat/long"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "Integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachHotel",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BeachHotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel009",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Hotel009"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel060",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Hotel060"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel088",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Hotel088"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel045",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Hotel045"
+      }
+    } ],
+    "id" : "31",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ParkAttraction",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParkAttraction"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction043",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Attraction043"
+      }
+    } ],
+    "id" : "46",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#EventType",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventType"
+    },
+    "id" : "83",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transport"
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "Integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "Integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "Integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "Rate"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Malaga",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Malaga"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#SanSebastian",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "SanSebastian"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Zaragoza",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Zaragoza"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Valencia",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Valencia"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Sevilla",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Sevilla"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Barcelona"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Pamplona",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Pamplona"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Madrid",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Madrid"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Toledo",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Toledo"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bilbao",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Bilbao"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Cadiz",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Cadiz"
+      }
+    } ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TransportType",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportType"
+    },
+    "subClasses" : [ "35", "93", "67", "15", "41" ],
+    "id" : "16",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hotel"
+    },
+    "subClasses" : [ "19", "31", "23", "20", "17" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bus"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus009",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Bus009"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus027",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Bus027"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus036",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Bus036"
+      }
+    } ],
+    "id" : "93",
+    "superClasses" : [ "16" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "10", "1" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "75"
+  }, {
+    "instances" : 0,
+    "union" : [ "10", "1", "7", "11", "12" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#CulturalAttraction",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CulturalAttraction"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction019",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Attraction019"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction016",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Attraction016"
+      }
+    } ],
+    "id" : "51",
+    "superClasses" : [ "82" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "11", "12" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "28", "10" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "39"
+  }, {
+    "instances" : 0,
+    "union" : [ "104", "105" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "71",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/longitude",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "id" : "97",
+    "label" : {
+      "IRI-based" : "SpatialThing/longitude"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "106",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Event",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "id" : "110",
+    "label" : {
+      "IRI-based" : "SpatialThing/lat/long"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "Rate"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/latitude",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "id" : "79",
+    "label" : {
+      "IRI-based" : "SpatialThing/latitude"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TouristicHotel",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TouristicHotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel081",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Hotel081"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel034",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Hotel034"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel063",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Hotel063"
+      }
+    } ],
+    "id" : "20",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "id" : "104",
+    "label" : {
+      "IRI-based" : "SpatialThing/lat/long"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/latitude",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "id" : "105",
+    "label" : {
+      "IRI-based" : "SpatialThing/latitude"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "113",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Attraction"
+    },
+    "id" : "10"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ElementType",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElementType"
+    },
+    "subClasses" : [ "16", "62", "82", "83", "117" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Restaurant"
+    },
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MonumentAttraction",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MonumentAttraction"
+    },
+    "id" : "45",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#HotelType",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HotelType"
+    },
+    "id" : "117",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MuseumAttraction",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MuseumAttraction"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction033",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Attraction033"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction045",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Attraction045"
+      }
+    } ],
+    "id" : "48",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachAttraction",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BeachAttraction"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction020",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Attraction020"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction076",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Attraction076"
+      }
+    } ],
+    "id" : "53",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#AttractionType",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AttractionType"
+    },
+    "subClasses" : [ "48", "46", "53", "51", "45" ],
+    "id" : "82",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RuralHotel",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RuralHotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel076",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Hotel076"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel033",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Hotel033"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel062",
+      "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+      "labels" : {
+        "IRI-based" : "Hotel062"
+      }
+    } ],
+    "id" : "19",
+    "superClasses" : [ "1" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "21",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "22",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "24",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "25",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "26",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "32",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "33",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "34",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "36",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "49",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "52",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "55",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "56",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "58",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "116",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "122",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "126",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "127",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "128",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "129",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasHotelPricePerNight"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#price",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "price"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasDate",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasDate"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasAttractionRate"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "13"
+  }, {
+    "range" : "20",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "18"
+  }, {
+    "range" : "20",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  }, {
+    "range" : "19",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "17",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "19",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "20",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasLocation",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasLocation"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "27"
+  }, {
+    "range" : "17",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "23",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "20",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "19",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantName",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasRestaurantName"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasAttractionId"
+    },
+    "domain" : "39",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "hasCityName"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "42"
+  }, {
+    "range" : "46",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  }, {
+    "range" : "48",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "46",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "45",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "46",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "46",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "48",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "51",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "range" : "48",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "45",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantAveragePrice",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "hasRestaurantAveragePrice"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "id"
+    },
+    "domain" : "61",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTypeHotel",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "hasTypeHotel"
+    },
+    "domain" : "71",
+    "attributes" : [ "datatype" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#rate",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "rate"
+    },
+    "domain" : "75",
+    "comment" : {
+      "undefined" : "_:genid-ff9f0f2e-3538-47d8-b8e7-395d317f84bc"
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#latitude",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "latitude"
+    },
+    "domain" : "28",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "71",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "85"
+  }, {
+    "range" : "16",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "91"
+  }, {
+    "range" : "16",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "92"
+  }, {
+    "range" : "16",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#longitude",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "longitude"
+    },
+    "domain" : "28",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "96"
+  }, {
+    "range" : "16",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#location",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "location"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "hasEnterprise"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "hasHotelName"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "hasCityId"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "hasAttractionName"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "hasTransportId"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#isTypeOf",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "isTypeOf"
+    },
+    "domain" : "63",
+    "attributes" : [ "object" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventId",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "hasEventId"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantId",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "hasRestaurantId"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "114"
+  }, {
+    "range" : "62",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "115"
+  }, {
+    "range" : "16",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTypeName",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "106",
+    "label" : {
+      "IRI-based" : "hasTypeName"
+    },
+    "domain" : "71",
+    "attributes" : [ "datatype" ],
+    "id" : "118"
+  }, {
+    "range" : "117",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventName",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "hasEventName"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "120"
+  }, {
+    "range" : "62",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "hasTransportAveragePrice"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "hasStars"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "123"
+  }, {
+    "range" : "16",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "124"
+  }, {
+    "range" : "62",
+    "domain" : "117",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "range" : "16",
+    "domain" : "117",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "16",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "127"
+  }, {
+    "range" : "83",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "117",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "82",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "range" : "82",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "131"
+  }, {
+    "range" : "82",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "132"
+  }, {
+    "range" : "82",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "133"
+  }, {
+    "range" : "63",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "134"
+  }, {
+    "range" : "63",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "82",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "range" : "63",
+    "domain" : "117",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "137"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "hasHotelRate"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "hasHotelId"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "139"
+  }, {
+    "range" : "63",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "63",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "113",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "71",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#has_location",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "has_location"
+    },
+    "domain" : "28",
+    "attributes" : [ "external", "datatype", "functional" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn",
+    "baseIri" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "locatedIn"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "functional" ],
+    "id" : "144"
+  }, {
+    "range" : "1",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "range" : "1",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "1",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "1",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "range" : "1",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "149"
+  } ]
+}

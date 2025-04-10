@@ -1,0 +1,866 @@
+@prefix : <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#> .
+
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations> rdf:type owl:Ontology .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate
+:Rate rdf:type rdfs:Datatype ;
+      owl:equivalentClass :Rate .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :Rate ;
+   owl:annotatedProperty owl:equivalentClass ;
+   owl:annotatedTarget :Rate ;
+   rdfs:comment _:genid2
+ ] .
+
+_:genid2 :rate """DatatypeDefinition(
+   :rate
+   DatatypeRestriction( xsd:integer           
+     xsd:minInclusive \"0\"^^xsd:integer
+     xsd:maxInclusive \"5\"^^xsd:integer
+   )
+ )"""^^xsd:Integer .
+
+
+###  http://www.w3.org/2001/XMLSchema#Integer
+xsd:Integer rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/latitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/latitude> rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/longitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/longitude> rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#isTypeOf
+:isTypeOf rdf:type owl:ObjectProperty ;
+          rdfs:domain :ElementType ;
+          rdfs:range :Attraction ,
+                     :Event ,
+                     :Hotel ,
+                     :Restaurant ,
+                     :Transport .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn
+:locatedIn rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain [ owl:intersectionOf ( :Attraction
+                                              :Event
+                                              :Hotel
+                                              :Restaurant
+                                              :Transport
+                                            ) ;
+                         rdf:type owl:Class
+                       ] ;
+           rdfs:range :City .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId
+:hasAttractionId rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :id ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:domain :Attraction ,
+                             :City ;
+                 rdfs:range xsd:Integer .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName
+:hasAttractionName rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :name ;
+                   rdfs:domain :Attraction ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate
+:hasAttractionRate rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :rate ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain :Attraction ;
+                   rdfs:range :Rate ;
+                   owl:propertyDisjointWith :hasHotelRate .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId
+:hasCityId rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :id ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:domain :City ;
+           rdfs:range xsd:Integer .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName
+:hasCityName rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :name ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain :City ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasDate
+:hasDate rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Event ;
+         rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise
+:hasEnterprise rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Transport ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventId
+:hasEventId rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :id ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain :Event ;
+            rdfs:range xsd:Integer .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventName
+:hasEventName rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :name ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain :Event ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId
+:hasHotelId rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :id ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain :Hotel ;
+            rdfs:range xsd:Integer .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName
+:hasHotelName rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :name ;
+              rdfs:domain :Hotel ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight
+:hasHotelPricePerNight rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf :price ;
+                       rdfs:domain :Hotel ;
+                       rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate
+:hasHotelRate rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :rate ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain :Hotel ;
+              rdfs:range :Rate .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasLocation
+:hasLocation rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :City ;
+             rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantAveragePrice
+:hasRestaurantAveragePrice rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf :price ;
+                           rdfs:domain :Restaurant ;
+                           rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantId
+:hasRestaurantId rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :id ;
+                 rdf:type owl:FunctionalProperty ;
+                 rdfs:domain :Restaurant ;
+                 rdfs:range xsd:Integer .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantName
+:hasRestaurantName rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :name ;
+                   rdfs:domain :Restaurant ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars
+:hasStars rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Hotel ;
+          rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice
+:hasTransportAveragePrice rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :price ;
+                          rdfs:domain :Transport ;
+                          rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId
+:hasTransportId rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :id ;
+                rdf:type owl:FunctionalProperty ;
+                rdfs:domain :Transport ;
+                rdfs:range xsd:Integer .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTypeHotel
+:hasTypeHotel rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTypeName
+:hasTypeName rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :name .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    rdf:type owl:FunctionalProperty ;
+    rdfs:domain [ owl:intersectionOf ( :Attraction
+                                       :City
+                                       :Event
+                                       :Hotel
+                                       :Restaurant
+                                       :Transport
+                                     ) ;
+                  rdf:type owl:Class
+                ] ;
+    rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#location
+:location rdf:type owl:DatatypeProperty ;
+          rdfs:domain :City ;
+          rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/latitude> ,
+                     <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name
+:name rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain owl:Thing ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#price
+:price rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Hotel ,
+                   :Restaurant ,
+                   :Transport ;
+       rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#rate
+:rate rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :Attraction ,
+                  :Hotel ;
+      rdfs:range :Rate ;
+      rdfs:comment _:genid16 .
+
+_:genid16 :rate """DatatypeDefinition(
+   :rate
+   DatatypeRestriction( xsd:decimal         
+     xsd:minInclusive \"0\"^^xsd:decimal
+     xsd:maxInclusive \"5\"^^xsd:decimal
+   )
+ )"""^^:Rate .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#has_location
+<http://www.w3.org/2003/01/geo/wgs84_pos#has_location> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:subPropertyOf :location ;
+                                                       rdf:type owl:FunctionalProperty ;
+                                                       rdfs:domain :City ;
+                                                       rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#latitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#latitude> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:subPropertyOf :location ;
+                                                   rdfs:domain :City ;
+                                                   rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/latitude> .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#longitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#longitude> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:subPropertyOf :location ;
+                                                    rdfs:domain :City ;
+                                                    rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/longitude> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction
+:Attraction rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#AttractionType
+:AttractionType rdf:type owl:Class ;
+                rdfs:subClassOf :ElementType .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachAttraction
+:BeachAttraction rdf:type owl:Class ;
+                 rdfs:subClassOf :AttractionType .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachHotel
+:BeachHotel rdf:type owl:Class ;
+            rdfs:subClassOf :Hotel .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike
+:Bike rdf:type owl:Class ;
+      rdfs:subClassOf :TransportType .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus
+:Bus rdf:type owl:Class ;
+     rdfs:subClassOf :TransportType .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BussinessHotel
+:BussinessHotel rdf:type owl:Class ;
+                rdfs:subClassOf :Hotel .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City
+:City rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#CulturalAttraction
+:CulturalAttraction rdf:type owl:Class ;
+                    rdfs:subClassOf :AttractionType .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ElementType
+:ElementType rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Event
+:Event rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#EventType
+:EventType rdf:type owl:Class ;
+           rdfs:subClassOf :ElementType .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel
+:Hotel rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#HotelType
+:HotelType rdf:type owl:Class ;
+           rdfs:subClassOf :ElementType .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#LuxuryHotel
+:LuxuryHotel rdf:type owl:Class ;
+             rdfs:subClassOf :Hotel .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MonumentAttraction
+:MonumentAttraction rdf:type owl:Class ;
+                    rdfs:subClassOf :AttractionType .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MuseumAttraction
+:MuseumAttraction rdf:type owl:Class ;
+                  rdfs:subClassOf :AttractionType .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ParkAttraction
+:ParkAttraction rdf:type owl:Class ;
+                rdfs:subClassOf :AttractionType .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RestauranType
+:RestauranType rdf:type owl:Class ;
+               rdfs:subClassOf :ElementType .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant
+:Restaurant rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RuralHotel
+:RuralHotel rdf:type owl:Class ;
+            rdfs:subClassOf :Hotel .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Subway
+:Subway rdf:type owl:Class ;
+        rdfs:subClassOf :TransportType .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi
+:Taxi rdf:type owl:Class ;
+      rdfs:subClassOf :TransportType .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TouristicHotel
+:TouristicHotel rdf:type owl:Class ;
+                rdfs:subClassOf :Hotel .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Tramway
+:Tramway rdf:type owl:Class ;
+         rdfs:subClassOf :TransportType .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport
+:Transport rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TransportType
+:TransportType rdf:type owl:Class ;
+               rdfs:subClassOf :ElementType .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction016
+:Attraction016 rdf:type owl:NamedIndividual ,
+                        :CulturalAttraction ;
+               :locatedIn :Barcelona ;
+               :hasAttractionId 16 ;
+               :hasAttractionName "Castillo Barcelona" ;
+               :hasAttractionRate "4.5"^^:Rate .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction019
+:Attraction019 rdf:type owl:NamedIndividual ,
+                        :CulturalAttraction ;
+               :locatedIn :Barcelona ;
+               :hasAttractionId 19 ;
+               :hasAttractionName "Palacio Barcelona" ;
+               :hasAttractionRate "4.7"^^:Rate .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction020
+:Attraction020 rdf:type owl:NamedIndividual ,
+                        :BeachAttraction ;
+               :locatedIn :Barcelona ;
+               :hasAttractionId 20 ;
+               :hasAttractionName "Catedral Barcelona" ;
+               :hasAttractionRate "3.7"^^:Rate .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction033
+:Attraction033 rdf:type owl:NamedIndividual ,
+                        :MuseumAttraction ;
+               :locatedIn :Barcelona ;
+               :hasAttractionId 33 ;
+               :hasAttractionName "Museo Barcelona" ;
+               :hasAttractionRate "3.8"^^:Rate .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction043
+:Attraction043 rdf:type owl:NamedIndividual ,
+                        :ParkAttraction ;
+               :locatedIn :Barcelona ;
+               :hasAttractionId 43 ;
+               :hasAttractionName "Parque Barcelona" ;
+               :hasAttractionRate "4.9"^^:Rate .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction045
+:Attraction045 rdf:type owl:NamedIndividual ,
+                        :MuseumAttraction ;
+               :locatedIn :Barcelona ;
+               :hasAttractionId 45 ;
+               :hasAttractionName "Catedral Barcelona" ;
+               :hasAttractionRate "4.3"^^:Rate .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction076
+:Attraction076 rdf:type owl:NamedIndividual ,
+                        :BeachAttraction ;
+               :locatedIn :Barcelona ;
+               :hasAttractionId 76 ;
+               :hasAttractionName "Palacio Barcelona" ;
+               :hasAttractionRate "4.3"^^:Rate .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona
+:Barcelona rdf:type owl:NamedIndividual ,
+                    :City ;
+           :hasCityId "4"^^xsd:Integer ;
+           :hasCityName "Barcelona" ;
+           <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "41.3874,2.1686"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike071
+:Bike071 rdf:type owl:NamedIndividual ,
+                  :Bike ;
+         :locatedIn :Barcelona ;
+         :hasEnterprise "Movi Barcelona" ;
+         :hasTransportAveragePrice 2.86 ;
+         :hasTransportId 71 .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike087
+:Bike087 rdf:type owl:NamedIndividual ,
+                  :Bike ;
+         :locatedIn :Barcelona ;
+         :hasEnterprise "Movi Barcelona" ;
+         :hasTransportAveragePrice 6.29 ;
+         :hasTransportId 87 .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bilbao
+:Bilbao rdf:type owl:NamedIndividual ,
+                 :City ;
+        :hasCityId "6"^^xsd:Integer ;
+        :hasCityName "Bilbao" ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "43.2630,-2.9350"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus009
+:Bus009 rdf:type owl:NamedIndividual ,
+                 :Bus ;
+        :locatedIn :Barcelona ;
+        :hasEnterprise "Metro Barcelona" ;
+        :hasTransportAveragePrice 8.72 ;
+        :hasTransportId 9 .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus027
+:Bus027 rdf:type owl:NamedIndividual ,
+                 :Bus ;
+        :locatedIn :Barcelona ;
+        :hasEnterprise "Urban Barcelona" ;
+        :hasTransportAveragePrice 3.54 ;
+        :hasTransportId 27 .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus036
+:Bus036 rdf:type owl:NamedIndividual ,
+                 :Bus ;
+        :locatedIn :Barcelona ;
+        :hasEnterprise "City Barcelona" ;
+        :hasTransportAveragePrice 2.12 ;
+        :hasTransportId 36 .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Cadiz
+:Cadiz rdf:type owl:NamedIndividual ,
+                :City ;
+       :hasCityId "9"^^xsd:Integer ;
+       :hasCityName "Cádiz" ;
+       <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "36.5297,-6.2920"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel009
+:Hotel009 rdf:type owl:NamedIndividual ,
+                   :BeachHotel ;
+          :locatedIn :Barcelona ;
+          :hasHotelId 9 ;
+          :hasHotelName "Hotel Royal Barcelona" ;
+          :hasHotelPricePerNight 252 ;
+          :hasHotelRate "4.0"^^:Rate ;
+          :hasStars 4 .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel033
+:Hotel033 rdf:type owl:NamedIndividual ,
+                   :RuralHotel ;
+          :locatedIn :Barcelona ;
+          :hasHotelId "33"^^xsd:Integer ;
+          :hasHotelName "Hotel Sol Barcelona" ;
+          :hasHotelPricePerNight 189.0 ;
+          :hasHotelRate "3.5"^^:Rate ;
+          :hasStars 5 ;
+          :hasTypeHotel "" .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel034
+:Hotel034 rdf:type owl:NamedIndividual ,
+                   :TouristicHotel ;
+          :locatedIn :Barcelona ;
+          :hasHotelId "34"^^xsd:Integer ;
+          :hasHotelName "Hotel Del Mar Barcelona" ;
+          :hasHotelPricePerNight 250.0 ;
+          :hasHotelRate "4.1"^^:Rate ;
+          :hasStars 5 .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel045
+:Hotel045 rdf:type owl:NamedIndividual ,
+                   :BeachHotel ;
+          :locatedIn :Barcelona ;
+          :hasHotelId "45"^^xsd:Integer ;
+          :hasHotelName "Hotel Royal Barcelona" ;
+          :hasHotelPricePerNight 269.0 ;
+          :hasHotelRate "4.9"^^:Rate ;
+          :hasStars 4 .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel060
+:Hotel060 rdf:type owl:NamedIndividual ,
+                   :BeachHotel ;
+          :locatedIn :Barcelona ;
+          :hasHotelId "60"^^xsd:Integer ;
+          :hasHotelName "Hotel Del Mar Barcelona" ;
+          :hasHotelPricePerNight 298.0 ;
+          :hasHotelRate "4.6"^^:Rate ;
+          :hasStars 4 .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel062
+:Hotel062 rdf:type owl:NamedIndividual ,
+                   :RuralHotel ;
+          :locatedIn :Barcelona ;
+          :hasHotelId "62"^^xsd:Integer ;
+          :hasHotelName "Hotel Palace Barcelona" ;
+          :hasHotelPricePerNight 106.0 ;
+          :hasHotelRate "3.8"^^:Rate ;
+          :hasStars 4 .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel063
+:Hotel063 rdf:type owl:NamedIndividual ,
+                   :TouristicHotel ;
+          :locatedIn :Barcelona ;
+          :hasHotelId "63"^^xsd:Integer ;
+          :hasHotelName "Hotel Sol Barcelona" ;
+          :hasHotelPricePerNight 181.0 ;
+          :hasHotelRate "5.0"^^:Rate ;
+          :hasStars 4 .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel064
+:Hotel064 rdf:type owl:NamedIndividual ,
+                   :BussinessHotel ;
+          :locatedIn :Barcelona ;
+          :hasHotelId "64"^^xsd:Integer ;
+          :hasHotelName "Hotel Palace Barcelona" ;
+          :hasHotelPricePerNight 251.0 ;
+          :hasHotelRate "4.3"^^:Rate ;
+          :hasStars 3 .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel076
+:Hotel076 rdf:type owl:NamedIndividual ,
+                   :RuralHotel ;
+          :locatedIn :Barcelona ;
+          :hasHotelId "76"^^xsd:Integer ;
+          :hasHotelName "Hotel Vista Barcelona" ;
+          :hasHotelPricePerNight 251.0 ;
+          :hasHotelRate "4.3"^^:Rate ;
+          :hasStars 3 .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel077
+:Hotel077 rdf:type owl:NamedIndividual ,
+                   :LuxuryHotel ;
+          :locatedIn :Barcelona ;
+          :hasHotelId "77"^^xsd:Integer ;
+          :hasHotelName "Hotel Sol Barcelona" ;
+          :hasHotelPricePerNight 222.0 ;
+          :hasHotelRate "4.6"^^:Rate ;
+          :hasStars 4 .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel081
+:Hotel081 rdf:type owl:NamedIndividual ,
+                   :TouristicHotel ;
+          :locatedIn :Barcelona ;
+          :hasHotelId "81"^^xsd:Integer ;
+          :hasHotelName "Hotel Vista Barcelona" ;
+          :hasHotelPricePerNight 74.0 ;
+          :hasHotelRate "3.7"^^:Rate ;
+          :hasStars 4 .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel088
+:Hotel088 rdf:type owl:NamedIndividual ,
+                   :BeachHotel ;
+          :locatedIn :Barcelona ;
+          :hasHotelId "88"^^xsd:Integer ;
+          :hasHotelName "Hotel Vista Barcelona" ;
+          :hasHotelPricePerNight 149.0 ;
+          :hasHotelRate "4.9"^^:Rate ;
+          :hasStars 3 .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Madrid
+:Madrid rdf:type owl:NamedIndividual ,
+                 :City ;
+        :hasCityId "3"^^xsd:Integer ;
+        :hasCityName "Madrid" ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "40.4168,-3.7038"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Malaga
+:Malaga rdf:type owl:NamedIndividual ,
+                 :City ;
+        :hasCityId "11"^^xsd:Integer ;
+        :hasCityName "Málaga" ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "37.3886,-5.9823"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Pamplona
+:Pamplona rdf:type owl:NamedIndividual ,
+                   :City ;
+          :hasCityId "7"^^xsd:Integer ;
+          :hasCityName "Pamplona" ;
+          <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "42.8169,-1.6444"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#SanSebastian
+:SanSebastian rdf:type owl:NamedIndividual ,
+                       :City ;
+              :hasCityId "8"^^xsd:Integer ;
+              :hasCityName "San Sebastián" ;
+              <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "43.3183,-1.9812"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Sevilla
+:Sevilla rdf:type owl:NamedIndividual ,
+                  :City ;
+         :hasCityId "10"^^xsd:Integer ;
+         :hasCityName "Sevilla" ;
+         <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "37.3886,-5.9823"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi041
+:Taxi041 rdf:type owl:NamedIndividual ,
+                  :Taxi ;
+         :locatedIn :Barcelona ;
+         :hasEnterprise "Metro Barcelona" ;
+         :hasTransportAveragePrice 3.57 ;
+         :hasTransportId 41 .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi064
+:Taxi064 rdf:type owl:NamedIndividual ,
+                  :Taxi ;
+         :locatedIn :Barcelona ;
+         :hasEnterprise "City Barcelona" ;
+         :hasTransportAveragePrice 8.1 ;
+         :hasTransportId 64 .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Toledo
+:Toledo rdf:type owl:NamedIndividual ,
+                 :City ;
+        :hasCityId "1"^^xsd:Integer ;
+        :hasCityName "Toledo" ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "39.8628,-4.0273"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Valencia
+:Valencia rdf:type owl:NamedIndividual ,
+                   :City ;
+          :hasCityId "2"^^xsd:Integer ;
+          :hasCityName "Valencia" ;
+          <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "39.4699,-0.3763"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+
+
+###  http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Zaragoza
+:Zaragoza rdf:type owl:NamedIndividual ,
+                   :City ;
+          :hasCityId "5"^^xsd:Integer ;
+          :hasCityName "Zaragoza" ;
+          <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "41.6488,-0.8891"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AttractionType
+                :EventType
+                :HotelType
+                :RestauranType
+                :TransportType
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BeachAttraction
+                :CulturalAttraction
+                :MonumentAttraction
+                :MuseumAttraction
+                :ParkAttraction
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BeachHotel
+                :BussinessHotel
+                :LuxuryHotel
+                :RuralHotel
+                :TouristicHotel
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :hasAttractionId
+                :hasCityId
+                :hasEventId
+                :hasHotelId
+                :hasRestaurantId
+                :hasTransportId
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :hasAttractionName
+                :hasCityName
+                :hasEventName
+                :hasHotelName
+                :hasRestaurantName
+                :hasTypeName
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :hasHotelPricePerNight
+                :hasRestaurantAveragePrice
+                :hasTransportAveragePrice
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

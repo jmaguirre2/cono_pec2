@@ -1,0 +1,840 @@
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid1 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+_:genid1 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2002/07/owl#equivalentClass> .
+_:genid1 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#comment> _:genid2 .
+_:genid2 <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#rate> "DatatypeDefinition(\n   :rate\n   DatatypeRestriction( xsd:integer           \n     xsd:minInclusive \"0\"^^xsd:integer\n     xsd:maxInclusive \"5\"^^xsd:integer\n   )\n )"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+# 
+# http://www.w3.org/2001/XMLSchema#Integer
+<http://www.w3.org/2001/XMLSchema#Integer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/latitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/longitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#isTypeOf
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#isTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ElementType> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Event> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#isTypeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid3 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Event> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#rate> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasDate
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Event> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventId
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Event> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventName
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Event> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#price> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#rate> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasLocation
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantAveragePrice
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantAveragePrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantAveragePrice> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#price> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantAveragePrice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantAveragePrice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantId
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantName
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#price> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTypeHotel
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTypeHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTypeName
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTypeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTypeName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Event> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#location
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/latitude> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#price
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#price> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#price> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#price> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#price> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#rate
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#rate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#rate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#rate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#rate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#rate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#rate> <http://www.w3.org/2000/01/rdf-schema#comment> _:genid16 .
+_:genid16 <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#rate> "DatatypeDefinition(\n   :rate\n   DatatypeRestriction( xsd:decimal         \n     xsd:minInclusive \"0\"^^xsd:decimal\n     xsd:maxInclusive \"5\"^^xsd:decimal\n   )\n )"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#has_location
+<http://www.w3.org/2003/01/geo/wgs84_pos#has_location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#has_location> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#location> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#has_location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#has_location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#has_location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#latitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#latitude> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#location> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#latitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#latitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/latitude> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#longitude
+<http://www.w3.org/2003/01/geo/wgs84_pos#longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#longitude> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#location> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#longitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#longitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/longitude> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#AttractionType
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#AttractionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#AttractionType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ElementType> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachAttraction
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachAttraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#AttractionType> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachHotel
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TransportType> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TransportType> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BussinessHotel
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BussinessHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BussinessHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#CulturalAttraction
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#CulturalAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#CulturalAttraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#AttractionType> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ElementType
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ElementType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Event
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#EventType
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#EventType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#EventType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ElementType> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#HotelType
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#HotelType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#HotelType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ElementType> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#LuxuryHotel
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#LuxuryHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MonumentAttraction
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MonumentAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MonumentAttraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#AttractionType> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MuseumAttraction
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MuseumAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MuseumAttraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#AttractionType> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ParkAttraction
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ParkAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ParkAttraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#AttractionType> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RestauranType
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RestauranType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RestauranType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ElementType> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RuralHotel
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RuralHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RuralHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Subway
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Subway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Subway> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TransportType> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TransportType> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TouristicHotel
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TouristicHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TouristicHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Tramway
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Tramway> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Tramway> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TransportType> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TransportType
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TransportType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TransportType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ElementType> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction016
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#CulturalAttraction> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction016> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction016> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId> "16"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction016> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName> "Castillo Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction016> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate> "4.5"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction019
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#CulturalAttraction> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction019> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction019> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId> "19"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction019> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName> "Palacio Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction019> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate> "4.7"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction020
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction020> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachAttraction> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction020> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction020> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId> "20"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction020> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName> "Catedral Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction020> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate> "3.7"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction033
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MuseumAttraction> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction033> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction033> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId> "33"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction033> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName> "Museo Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction033> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate> "3.8"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction043
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction043> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ParkAttraction> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction043> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction043> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId> "43"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction043> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName> "Parque Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction043> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate> "4.9"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction045
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MuseumAttraction> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction045> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction045> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId> "45"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction045> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName> "Catedral Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction045> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate> "4.3"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction076
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction076> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction076> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachAttraction> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction076> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction076> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId> "76"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction076> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName> "Palacio Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction076> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate> "4.3"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId> "4"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName> "Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "41.3874,2.1686"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike071
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike071> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike071> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike071> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike071> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise> "Movi Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike071> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice> "2.86"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike071> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId> "71"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike087
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike087> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike087> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike087> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike087> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise> "Movi Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike087> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice> "6.29"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike087> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId> "87"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bilbao
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bilbao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bilbao> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId> "6"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bilbao> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName> "Bilbao" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bilbao> <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "43.2630,-2.9350"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus009
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus009> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus009> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise> "Metro Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus009> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice> "8.72"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus009> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId> "9"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus027
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus027> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus027> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise> "Urban Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus027> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice> "3.54"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus027> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId> "27"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus036
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus036> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus036> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus036> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus036> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise> "City Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus036> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice> "2.12"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus036> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId> "36"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Cadiz
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Cadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Cadiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Cadiz> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId> "9"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Cadiz> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName> "Cádiz" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Cadiz> <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "36.5297,-6.2920"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel009
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachHotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel009> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel009> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId> "9"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel009> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName> "Hotel Royal Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel009> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight> "252"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel009> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate> "4.0"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel009> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel033
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RuralHotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel033> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel033> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId> "33"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel033> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName> "Hotel Sol Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel033> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight> "189.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel033> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate> "3.5"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel033> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel033> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTypeHotel> "" .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel034
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel034> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TouristicHotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel034> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel034> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId> "34"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel034> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName> "Hotel Del Mar Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel034> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight> "250.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel034> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate> "4.1"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel034> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars> "5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel045
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel045> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachHotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel045> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel045> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId> "45"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel045> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName> "Hotel Royal Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel045> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight> "269.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel045> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate> "4.9"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel045> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel060
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel060> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel060> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachHotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel060> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel060> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId> "60"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel060> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName> "Hotel Del Mar Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel060> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight> "298.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel060> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate> "4.6"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel060> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel062
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel062> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel062> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RuralHotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel062> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel062> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId> "62"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel062> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName> "Hotel Palace Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel062> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight> "106.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel062> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate> "3.8"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel062> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel063
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel063> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel063> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TouristicHotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel063> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel063> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId> "63"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel063> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName> "Hotel Sol Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel063> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight> "181.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel063> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate> "5.0"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel063> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars> "4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel064
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel064> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel064> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BussinessHotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel064> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel064> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId> "64"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel064> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName> "Hotel Palace Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel064> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight> "251.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel064> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate> "4.3"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel064> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel076
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel076> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel076> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RuralHotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel076> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel076> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId> "76"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel076> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName> "Hotel Vista Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel076> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight> "251.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel076> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate> "4.3"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel076> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel077
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel077> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel077> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#LuxuryHotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel077> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel077> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId> "77"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel077> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName> "Hotel Sol Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel077> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight> "222.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel077> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate> "4.6"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel077> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel081
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel081> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel081> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TouristicHotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel081> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel081> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId> "81"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel081> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName> "Hotel Vista Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel081> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight> "74.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel081> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate> "3.7"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel081> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel088
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel088> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel088> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachHotel> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel088> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel088> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId> "88"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel088> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName> "Hotel Vista Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel088> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight> "149.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel088> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate> "4.9"^^<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel088> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Madrid
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Madrid> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId> "3"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Madrid> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName> "Madrid" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Madrid> <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "40.4168,-3.7038"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Malaga
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Malaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Malaga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Malaga> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId> "11"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Malaga> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName> "Málaga" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Malaga> <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "37.3886,-5.9823"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Pamplona
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Pamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Pamplona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Pamplona> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId> "7"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Pamplona> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName> "Pamplona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Pamplona> <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "42.8169,-1.6444"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#SanSebastian
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#SanSebastian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#SanSebastian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#SanSebastian> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId> "8"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#SanSebastian> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName> "San Sebastián" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#SanSebastian> <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "43.3183,-1.9812"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Sevilla
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Sevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Sevilla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Sevilla> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId> "10"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Sevilla> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName> "Sevilla" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Sevilla> <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "37.3886,-5.9823"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi041
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi041> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi041> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi041> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi041> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise> "Metro Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi041> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice> "3.57"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi041> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId> "41"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi064
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi064> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi064> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi064> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi064> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise> "City Barcelona" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi064> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice> "8.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi064> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId> "64"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Toledo
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Toledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Toledo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Toledo> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId> "1"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Toledo> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName> "Toledo" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Toledo> <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "39.8628,-4.0273"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Valencia
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Valencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Valencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Valencia> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId> "2"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Valencia> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName> "Valencia" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Valencia> <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "39.4699,-0.3763"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+# 
+# http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Zaragoza
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Zaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Zaragoza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Zaragoza> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId> "5"^^<http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Zaragoza> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName> "Zaragoza" .
+<http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Zaragoza> <http://www.w3.org/2003/01/geo/wgs84_pos#has_location> "41.6488,-0.8891"^^<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid17 <http://www.w3.org/2002/07/owl#members> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TransportType> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RestauranType> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#HotelType> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#EventType> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#AttractionType> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid23 <http://www.w3.org/2002/07/owl#members> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ParkAttraction> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MuseumAttraction> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MonumentAttraction> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#CulturalAttraction> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachAttraction> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid29 <http://www.w3.org/2002/07/owl#members> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TouristicHotel> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RuralHotel> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#LuxuryHotel> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BussinessHotel> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachHotel> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
+_:genid35 <http://www.w3.org/2002/07/owl#members> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantId> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventId> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
+_:genid42 <http://www.w3.org/2002/07/owl#members> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTypeName> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantName> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventName> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
+_:genid49 <http://www.w3.org/2002/07/owl#members> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantAveragePrice> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

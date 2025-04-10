@@ -1,0 +1,1489 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Axiom" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedProperty" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#equivalentClass"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedSource" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate"
+  } ],
+  "http://www.w3.org/2002/07/owl#annotatedTarget" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#rate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "DatatypeDefinition(\n   :rate\n   DatatypeRestriction( xsd:decimal         \n     xsd:minInclusive \"0\"^^xsd:decimal\n     xsd:maxInclusive \"5\"^^xsd:decimal\n   )\n )"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#AttractionType"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#EventType"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#HotelType"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RestauranType"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TransportType"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#rate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "DatatypeDefinition(\n   :rate\n   DatatypeRestriction( xsd:integer           \n     xsd:minInclusive \"0\"^^xsd:integer\n     xsd:maxInclusive \"5\"^^xsd:integer\n   )\n )"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachAttraction"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#CulturalAttraction"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MonumentAttraction"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MuseumAttraction"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ParkAttraction"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachHotel"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BussinessHotel"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#LuxuryHotel"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RuralHotel"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TouristicHotel"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Event"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointProperties" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventId"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantId"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointProperties" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventName"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantName"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTypeName"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointProperties" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantAveragePrice"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Event"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant"
+    }, {
+      "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction016",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "16"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName" : [ {
+    "@value" : "Castillo Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "4.5"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#CulturalAttraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction019",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "19"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName" : [ {
+    "@value" : "Palacio Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "4.7"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#CulturalAttraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction020",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "20"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName" : [ {
+    "@value" : "Catedral Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "3.7"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachAttraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction033",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "33"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName" : [ {
+    "@value" : "Museo Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "3.8"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MuseumAttraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction043",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "43"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName" : [ {
+    "@value" : "Parque Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "4.9"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ParkAttraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction045",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "45"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName" : [ {
+    "@value" : "Catedral Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "4.3"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MuseumAttraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction076",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "76"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName" : [ {
+    "@value" : "Palacio Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "4.3"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachAttraction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#AttractionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ElementType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "4"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName" : [ {
+    "@value" : "Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2003/01/geo/wgs84_pos#has_location" : [ {
+    "@type" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long",
+    "@value" : "41.3874,2.1686"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachAttraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#AttractionType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TransportType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike071",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise" : [ {
+    "@value" : "Movi Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2.86"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "71"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike087",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise" : [ {
+    "@value" : "Movi Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "6.29"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "87"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bike"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bilbao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "6"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName" : [ {
+    "@value" : "Bilbao"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2003/01/geo/wgs84_pos#has_location" : [ {
+    "@type" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long",
+    "@value" : "43.2630,-2.9350"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TransportType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus009",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise" : [ {
+    "@value" : "Metro Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "8.72"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "9"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus027",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise" : [ {
+    "@value" : "Urban Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3.54"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "27"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus036",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise" : [ {
+    "@value" : "City Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "2.12"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "36"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Bus"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BussinessHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Cadiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "9"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName" : [ {
+    "@value" : "Cádiz"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2003/01/geo/wgs84_pos#has_location" : [ {
+    "@type" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long",
+    "@value" : "36.5297,-6.2920"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#CulturalAttraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#AttractionType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ElementType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#EventType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ElementType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel009",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "9"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName" : [ {
+    "@value" : "Hotel Royal Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "252"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "4.0"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachHotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel033",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "33"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName" : [ {
+    "@value" : "Hotel Sol Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "189.0"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "3.5"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTypeHotel" : [ {
+    "@value" : ""
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RuralHotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel034",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "34"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName" : [ {
+    "@value" : "Hotel Del Mar Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "250.0"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "4.1"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "5"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TouristicHotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel045",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "45"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName" : [ {
+    "@value" : "Hotel Royal Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "269.0"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "4.9"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachHotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel060",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "60"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName" : [ {
+    "@value" : "Hotel Del Mar Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "298.0"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "4.6"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachHotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel062",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "62"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName" : [ {
+    "@value" : "Hotel Palace Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "106.0"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "3.8"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RuralHotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel063",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "63"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName" : [ {
+    "@value" : "Hotel Sol Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "181.0"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "5.0"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "4"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TouristicHotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel064",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "64"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName" : [ {
+    "@value" : "Hotel Palace Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "251.0"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "4.3"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BussinessHotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel076",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "76"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName" : [ {
+    "@value" : "Hotel Vista Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "251.0"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "4.3"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RuralHotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel077",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "77"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName" : [ {
+    "@value" : "Hotel Sol Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "222.0"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "4.6"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#LuxuryHotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel081",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "81"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName" : [ {
+    "@value" : "Hotel Vista Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "74.0"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "3.7"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TouristicHotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel088",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "88"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName" : [ {
+    "@value" : "Hotel Vista Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "149.0"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate" : [ {
+    "@type" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+    "@value" : "4.9"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#BeachHotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#HotelType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ElementType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#LuxuryHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Madrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "3"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName" : [ {
+    "@value" : "Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2003/01/geo/wgs84_pos#has_location" : [ {
+    "@type" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long",
+    "@value" : "40.4168,-3.7038"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Malaga",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "11"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName" : [ {
+    "@value" : "Málaga"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2003/01/geo/wgs84_pos#has_location" : [ {
+    "@type" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long",
+    "@value" : "37.3886,-5.9823"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MonumentAttraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#AttractionType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#MuseumAttraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#AttractionType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Pamplona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "7"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName" : [ {
+    "@value" : "Pamplona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2003/01/geo/wgs84_pos#has_location" : [ {
+    "@type" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long",
+    "@value" : "42.8169,-1.6444"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ParkAttraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#AttractionType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RestauranType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ElementType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#RuralHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#SanSebastian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "8"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName" : [ {
+    "@value" : "San Sebastián"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2003/01/geo/wgs84_pos#has_location" : [ {
+    "@type" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long",
+    "@value" : "43.3183,-1.9812"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Sevilla",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "10"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName" : [ {
+    "@value" : "Sevilla"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2003/01/geo/wgs84_pos#has_location" : [ {
+    "@type" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long",
+    "@value" : "37.3886,-5.9823"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Subway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TransportType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TransportType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi041",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise" : [ {
+    "@value" : "Metro Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "3.57"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "41"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi064",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise" : [ {
+    "@value" : "City Barcelona"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "8.1"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "64"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Barcelona"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Taxi"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Toledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "1"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName" : [ {
+    "@value" : "Toledo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2003/01/geo/wgs84_pos#has_location" : [ {
+    "@type" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long",
+    "@value" : "39.8628,-4.0273"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TouristicHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Tramway",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TransportType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#TransportType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ElementType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Valencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "2"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName" : [ {
+    "@value" : "Valencia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2003/01/geo/wgs84_pos#has_location" : [ {
+    "@type" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long",
+    "@value" : "39.4699,-0.3763"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Zaragoza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#Integer",
+    "@value" : "5"
+  } ],
+  "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName" : [ {
+    "@value" : "Zaragoza"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2003/01/geo/wgs84_pos#has_location" : [ {
+    "@type" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long",
+    "@value" : "41.6488,-0.8891"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction"
+  }, {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#Integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasAttractionRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#rate"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#Integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasCityName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEnterprise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#Integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasEventName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#Integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelPricePerNight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#price"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasHotelRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#rate"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantAveragePrice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#price"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#Integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasRestaurantName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasStars",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportAveragePrice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#price"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTransportId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#Integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTypeHotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#hasTypeName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid9"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#isTypeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#ElementType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction"
+  }, {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Event"
+  }, {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel"
+  }, {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant"
+  }, {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#locatedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/latitude"
+  }, {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#price",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel"
+  }, {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Restaurant"
+  }, {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#rate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "_:genid16"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Attraction"
+  }, {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#Rate"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#Integer",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/latitude",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/longitude",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#has_location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/lat/long"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#location"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#latitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/latitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#location"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#longitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing/longitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manolito/ontologies/2025/3/Smart_Tourism_and_Recommendations#location"
+  } ]
+} ]
