@@ -83,6 +83,7 @@
 # 
 # http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_attraction
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_attraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_attraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_attraction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Attraction> .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_attraction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Rating> .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_attraction> <http://www.w3.org/2000/01/rdf-schema#comment> "This property of object facilitates the valuation of an attraction"@en .
@@ -90,6 +91,7 @@
 # 
 # http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_hotel
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_hotel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Hotel> .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_hotel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Rating> .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_hotel> <http://www.w3.org/2000/01/rdf-schema#comment> "This property of object facilitates the valuation of a hotel"@en .
@@ -97,9 +99,10 @@
 # 
 # http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_restaurant
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_restaurant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Restaurant> .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_restaurant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Rating> .
-<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_restaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad de objeto facilita la valoración de un restaurante"@en .
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_restaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "This object property facilitates the restaurants rating"@en .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_restaurant> <http://www.w3.org/2000/01/rdf-schema#label> "rate_restaurant"@en .
 # 
 # 

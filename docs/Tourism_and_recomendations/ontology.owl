@@ -151,6 +151,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_attraction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Attraction"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Rating"/>
         <rdfs:comment xml:lang="en">This property of object facilitates the valuation of an attraction</rdfs:comment>
@@ -163,6 +164,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_hotel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Hotel"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Rating"/>
         <rdfs:comment xml:lang="en">This property of object facilitates the valuation of a hotel</rdfs:comment>
@@ -175,9 +177,10 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_restaurant">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Restaurant"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Rating"/>
-        <rdfs:comment xml:lang="en">Esta propiedad de objeto facilita la valoración de un restaurante</rdfs:comment>
+        <rdfs:comment xml:lang="en">This object property facilitates the restaurants rating</rdfs:comment>
         <rdfs:label xml:lang="en">rate_restaurant</rdfs:label>
     </owl:ObjectProperty>
     

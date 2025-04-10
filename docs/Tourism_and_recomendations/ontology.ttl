@@ -90,7 +90,8 @@
 
 
 ###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_attraction
-:rate_attraction rdf:type owl:ObjectProperty ;
+:rate_attraction rdf:type owl:ObjectProperty ,
+                          owl:AsymmetricProperty ;
                  rdfs:domain :Attraction ;
                  rdfs:range :Rating ;
                  rdfs:comment "This property of object facilitates the valuation of an attraction"@en ;
@@ -98,7 +99,8 @@
 
 
 ###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_hotel
-:rate_hotel rdf:type owl:ObjectProperty ;
+:rate_hotel rdf:type owl:ObjectProperty ,
+                     owl:AsymmetricProperty ;
             rdfs:domain :Hotel ;
             rdfs:range :Rating ;
             rdfs:comment "This property of object facilitates the valuation of a hotel"@en ;
@@ -106,10 +108,11 @@
 
 
 ###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_restaurant
-:rate_restaurant rdf:type owl:ObjectProperty ;
+:rate_restaurant rdf:type owl:ObjectProperty ,
+                          owl:AsymmetricProperty ;
                  rdfs:domain :Restaurant ;
                  rdfs:range :Rating ;
-                 rdfs:comment "Esta propiedad de objeto facilita la valoración de un restaurante"@en ;
+                 rdfs:comment "This object property facilitates the restaurants rating"@en ;
                  rdfs:label "rate_restaurant"@en .
 
 

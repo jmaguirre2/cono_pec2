@@ -2244,7 +2244,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_attraction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "This property of object facilitates the valuation of an attraction"
@@ -2261,7 +2261,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_hotel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "This property of object facilitates the valuation of a hotel"
@@ -2278,10 +2278,10 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_restaurant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Esta propiedad de objeto facilita la valoración de un restaurante"
+    "@value" : "This object property facilitates the restaurants rating"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Restaurant"
