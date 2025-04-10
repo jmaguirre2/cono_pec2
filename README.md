@@ -1,1 +1,2 @@
-# cono_pec2
+# Representación del Conocimiento PEC2
+Documentación ontología en github
