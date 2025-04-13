@@ -436,6 +436,10 @@
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/1.0"
+  } ],
+  "https://w3id.org/widoco/vocab#introduction" : [ {
+    "@language" : "en",
+    "@value" : "The ontology will focus solely on information related to tourist services offered by certain cities, including information about hotels, events, transportation, restaurants, and tourist attractions.\n\nThe objective is for this ontology to be used to develop an application that provides information about relevant tourist services. This information can be utilized by private users seeking tourist information about a specific city, as well as by other applications, such as those used by travel agencies for planning organized trips.\n\nThe working in this ontology is ongoing."
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#1_Start",
@@ -2422,4 +2426,7 @@
     "@language" : "en",
     "@value" : "location"
   } ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#introduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 } ]

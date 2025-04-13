@@ -24,7 +24,12 @@ The objective is for this ontology to be used to develop an application that pro
                                                                     rdfs:comment "It corresponds to the PEC2 of the subject “Knowledge Representation”."@en ;
                                                                     rdfs:isDefinedBy "José María Aguirre Carbonero &   Raúl Ríos Redondo"@en ;
                                                                     rdfs:label "Smart Tourism Ontology and Recommendations"@en ;
-                                                                    owl:priorVersion <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/1.0.0> .
+                                                                    owl:priorVersion <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/1.0.0> ;
+                                                                    <https://w3id.org/widoco/vocab#introduction> """The ontology will focus solely on information related to tourist services offered by certain cities, including information about hotels, events, transportation, restaurants, and tourist attractions.
+
+The objective is for this ontology to be used to develop an application that provides information about relevant tourist services. This information can be utilized by private users seeking tourist information about a specific city, as well as by other applications, such as those used by travel agencies for planning organized trips.
+
+The working in this ontology is ongoing."""@en .
 
 #################################################################
 #    Annotation properties
@@ -72,6 +77,10 @@ The objective is for this ontology to be used to develop an application that pro
 
 ###  http://www.w3.org/2000/01/rdf-schema#sameAS
 rdfs:sameAS rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/widoco/vocab#introduction
+<https://w3id.org/widoco/vocab#introduction> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
