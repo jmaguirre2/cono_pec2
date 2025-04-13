@@ -46,3 +46,5 @@ RewriteRule ^$ 406.html [R=406,L]
 # ---------------------------
 # Rewrite rule to serve the RDF/XML content from the vocabulary URI by default
 RewriteRule ^$ ontology.owl [R=303,L]
+
+RewriteRule ^ https://jmaguirre2.github.io/cono_pec2/ [R=302,L]
