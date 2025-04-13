@@ -1,0 +1,1245 @@
+@prefix : <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#> .
+
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> rdf:type owl:Ontology ;
+                                                                    owl:versionIRI <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/1.0> ;
+                                                                    <http://purl.org/dc/terms/abstract> """Scope:
+The ontology will focus solely on information related to tourist services offered by certain cities, including information about hotels, events, transportation, restaurants, and tourist attractions.
+
+Goals:
+The objective is for this ontology to be used to develop an application that provides information about relevant tourist services. This information can be utilized by private users seeking tourist information about a specific city, as well as by other applications, such as those used by travel agencies for planning organized trips.""" ;
+                                                                    <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                                    <http://purl.org/dc/terms/modified> "2024-04-12T18:00:00"^^xsd:dateTime ;
+                                                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "tourism" ;
+                                                                    :dct:contributor "Raúl Ríos Redondo and José María Aguirre Carbonero"@en ;
+                                                                    :dct:created "2025-04-04T18:00:00"^^xsd:dateTime ;
+                                                                    :dct:creator "Raúl Ríos Redondo and José María Aguirre Carbonero"@en ;
+                                                                    :dct:description "This is a Ontology provide terms related with tourist and recomendatios including cities, restaurants, events, touristic attactions and transportations."@en ;
+                                                                    :dct:title "Smart Tourism Ontology and Touristic recomendations"@en ;
+                                                                    rdfs:comment "It corresponds to the PEC2 of the subject “Knowledge Representation”."@en ;
+                                                                    rdfs:isDefinedBy "José María Aguirre Carbonero &   Raúl Ríos Redondo"@en ;
+                                                                    rdfs:label "Smart Tourism Ontology and Recommendations"@en ;
+                                                                    owl:priorVersion <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/1.0.0> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:contributor
+:dct:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:created
+:dct:created rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:creator
+:dct:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:description
+:dct:description rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:title
+:dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAS
+rdfs:sameAS rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#lat_long
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat_long> rdf:type rdfs:Datatype ;
+                                                   rdfs:comment "A comma-separated representation of a latitude, longitude coordinate."@en ;
+                                                   rdfs:label "lat_long"@en .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#location
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> rdf:type rdfs:Datatype ;
+                                                   rdfs:comment "The relation between something and the point, or other geometrical thing in space, where it is. For example, the realtionship between a radio tower and a Point with a given lat and long. Or a relationship between a park and its outline as a closed arc of points, or a road and its location as a arc (a sequence of points). Clearly in practice there will be limit to the accuracy of any such statement, but one would expect an accuracy appropriate for the size of the object and uses such as mapping ." ;
+                                                   rdfs:label "location"@en .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#has_attractions
+:has_attractions rdf:type owl:ObjectProperty ,
+                          owl:AsymmetricProperty ;
+                 rdfs:domain :City ;
+                 rdfs:range :Attraction ;
+                 rdfs:comment "This object property facilitates a city's attractions"@en ;
+                 rdfs:label "has_attractions"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#has_events
+:has_events rdf:type owl:ObjectProperty ,
+                     owl:AsymmetricProperty ;
+            rdfs:domain :City ;
+            rdfs:range :Event ;
+            rdfs:comment "This object property facilitates the events of a city."@en ;
+            rdfs:label "has_events"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#has_hotels
+:has_hotels rdf:type owl:ObjectProperty ,
+                     owl:AsymmetricProperty ;
+            rdfs:domain :City ;
+            rdfs:range :Hotel ;
+            rdfs:comment "This object property facilitates the hotels in a city"@en ;
+            rdfs:label "has_hotels"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#has_restaurants
+:has_restaurants rdf:type owl:ObjectProperty ,
+                          owl:AsymmetricProperty ;
+                 rdfs:domain :City ;
+                 rdfs:range :Restaurant ;
+                 rdfs:comment "This object property facilitates the restaurants of a city."@en ;
+                 rdfs:label "has_restaurants"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#has_stars
+:has_stars rdf:type owl:ObjectProperty ;
+           rdfs:domain :Hotel ;
+           rdfs:range :Starts ;
+           rdfs:comment "This object property provides the stars of a hotel"@en ;
+           rdfs:label "has_starts"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#has_transports
+:has_transports rdf:type owl:ObjectProperty ,
+                         owl:AsymmetricProperty ;
+                rdfs:domain :City ;
+                rdfs:range :Transport ;
+                rdfs:comment "This object property facilitates the transports of a city."@en ;
+                rdfs:label "has_transports"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#operated_by
+:operated_by rdf:type owl:ObjectProperty ;
+             rdfs:domain :Transport ;
+             rdfs:range :TransportCompany ;
+             rdfs:comment "This object property provides the company by which a transport is operated."@en ;
+             rdfs:label "operated_by"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_attraction
+:rate_attraction rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Attraction ;
+                 rdfs:range :Rating ;
+                 rdfs:comment "This property of object facilitates the valuation of an attraction"@en ;
+                 rdfs:label "rate_attraction"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_hotel
+:rate_hotel rdf:type owl:ObjectProperty ;
+            rdfs:domain :Hotel ;
+            rdfs:range :Rating ;
+            rdfs:comment "This property of object facilitates the valuation of a hotel"@en ;
+            rdfs:label "rate_hotel"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_restaurant
+:rate_restaurant rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Restaurant ;
+                 rdfs:range :Rating ;
+                 rdfs:comment "Esta propiedad de objeto facilita la valoración de un restaurante"@en ;
+                 rdfs:label "rate_restaurant"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#averageprice
+:averageprice rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Restaurant ;
+              rdfs:range xsd:decimal ;
+              rdfs:comment "Average price of a restaurant"@en ;
+              rdfs:label "averageprice_restaurant"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#averageprice_transport
+:averageprice_transport rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Transport ;
+                        rdfs:range xsd:decimal ;
+                        rdfs:comment "Average price of transport"@en ;
+                        rdfs:label "averageprice_transport"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#date
+:date rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Event ;
+      rdfs:range xsd:dateTime ;
+      rdfs:comment "Date when an event occurs"@en ;
+      rdfs:label "date"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#id
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain :City ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Class identifier of City"@en ;
+    rdfs:label "id_city"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#id_attraction
+:id_attraction rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Attraction ;
+               rdfs:range xsd:integer ;
+               rdfs:comment "Class identifier attraction"@en ;
+               rdfs:label "id_attraction"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#id_event
+:id_event rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Event ;
+          rdfs:range xsd:integer ;
+          rdfs:comment "Class identifier event"@en ;
+          rdfs:label "id_event"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#id_hotel
+:id_hotel rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Hotel ;
+          rdfs:range xsd:integer ;
+          rdfs:comment "Class identifier hotel"@en ;
+          rdfs:label "id_hotel"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#id_restaurant
+:id_restaurant rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Restaurant ;
+               rdfs:range xsd:integer ;
+               rdfs:comment "Class identifier restaurant"@en ;
+               rdfs:label "id_restaurant"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#id_transport
+:id_transport rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Transport ;
+              rdfs:range xsd:integer ;
+              rdfs:comment "Class identifier transport"@en ;
+              rdfs:label "id_transport"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#location
+:location rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :City ;
+          rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#lat_long> ;
+          rdfs:comment "Geographical location of the city"@en ;
+          rdfs:label "location"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#name
+:name rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :City ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Identifying name of City"@en ;
+      rdfs:label "name_city"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#name_attraction
+:name_attraction rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Attraction ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Identifying name of Attraction"@en ;
+                 rdfs:label "name_attraction"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#name_event
+:name_event rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Event ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Identifying name of Event"@en ;
+            rdfs:label "name_event"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#name_hotel
+:name_hotel rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Hotel ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Identifying name of Hotel"@en ;
+            rdfs:label "name_hotel"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#name_restaurant
+:name_restaurant rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Restaurant ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Identifying name of Restaurant"@en ;
+                 rdfs:label "name_restaurant"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#name_start
+:name_start rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Starts ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Identifying name of Start"@en ;
+            rdfs:label "name_start"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#name_transport
+:name_transport rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Transport ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Identifying name of Transport"@en ;
+                rdfs:label "name_transport"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#name_transport_company
+:name_transport_company rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :TransportCompany ;
+                        rdfs:range xsd:string ;
+                        rdfs:comment "Identifying name of  TransportCompany"@en ;
+                        rdfs:label "name_transport_company"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#pricenight
+:pricenight rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Hotel ;
+            rdfs:range xsd:decimal ;
+            rdfs:comment "Price of a hotel night"@en ;
+            rdfs:label "pricenight"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#value
+:value rdf:type owl:DatatypeProperty ,
+                owl:FunctionalProperty ;
+       rdfs:domain :Rating ;
+       rdfs:range xsd:decimal ;
+       rdfs:comment "Value that is determined in the ratings and stars of a hotel"@en ;
+       rdfs:label "value"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#valuestart
+:valuestart rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Starts ;
+            rdfs:range xsd:int ;
+            rdfs:comment "Value of Start"@en ;
+            rdfs:label "valuestart"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Andalusian
+:Andalusian rdf:type owl:Class ;
+            rdfs:subClassOf :Cuisine ;
+            rdfs:comment "Andalusian food restaurant"@en ;
+            rdfs:label "Andalusian"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Attraction
+:Attraction rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :rate_attraction ;
+                              owl:someValuesFrom :Rating
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :rate_attraction ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :Rating
+                            ] ;
+            rdfs:comment "Indicates possible attractions in the cities"@en ;
+            rdfs:label "Attraction"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Beach
+:Beach rdf:type owl:Class ;
+       rdfs:subClassOf :Attraction ;
+       rdfs:comment "Attractions located on the beach"@en ;
+       rdfs:label "Beach"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Bicycle
+:Bicycle rdf:type owl:Class ;
+         rdfs:subClassOf :Land ;
+         rdfs:comment "Use the bicycle as transport"@en ;
+         rdfs:label "Bicycle"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Bus
+:Bus rdf:type owl:Class ;
+     rdfs:subClassOf :Land ;
+     rdfs:comment "Use the bus as transport"@en ;
+     rdfs:label "Bus"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Business
+:Business rdf:type owl:Class ;
+          rdfs:subClassOf :Hotel ;
+          rdfs:comment "Business hotels"@en ;
+          rdfs:label "Business"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#City
+:City rdf:type owl:Class ;
+      rdfs:comment "Cities where tourism events take place"@en ;
+      rdfs:label "City"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Cuisine
+:Cuisine rdf:type owl:Class ;
+         rdfs:subClassOf :Restaurant ;
+         rdfs:comment "Types of restaurants by type of food"@en ;
+         rdfs:label "Cuisine"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Cultural
+:Cultural rdf:type owl:Class ;
+          rdfs:subClassOf :Event ;
+          rdfs:comment "Cultural events"@en ;
+          rdfs:label "Cultural"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Culture
+:Culture rdf:type owl:Class ;
+         rdfs:subClassOf :Attraction ;
+         rdfs:comment "Cultural attractions"@en ;
+         rdfs:label "Culture"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Event
+:Event rdf:type owl:Class ;
+       rdfs:comment "Types of events that tourists can enjoy in cities"@en ;
+       rdfs:label "Event"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Gastronomic
+:Gastronomic rdf:type owl:Class ;
+             rdfs:subClassOf :Event ;
+             rdfs:comment "Gastronomic events"@en ;
+             rdfs:label "Gastronomic"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#High
+:High rdf:type owl:Class ;
+      rdfs:subClassOf :Range ;
+      rdfs:comment "High range of a hotel"@en ;
+      rdfs:label "High"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Hotel
+:Hotel rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :has_stars ;
+                         owl:someValuesFrom :Starts
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :rate_hotel ;
+                         owl:someValuesFrom :Rating
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :has_stars ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :Starts
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :rate_hotel ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :Rating
+                       ] ;
+       rdfs:comment "Types of hotels where tourists can stay during their visit to the city."@en ;
+       rdfs:label "Hotel"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Italian
+:Italian rdf:type owl:Class ;
+         rdfs:subClassOf :Cuisine ;
+         rdfs:comment "Italian food restaurant"@en ;
+         rdfs:label "Italian"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Japanese
+:Japanese rdf:type owl:Class ;
+          rdfs:subClassOf :Cuisine ;
+          rdfs:comment "Japanese food restaurant"@en ;
+          rdfs:label "Japanese"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Land
+:Land rdf:type owl:Class ;
+      rdfs:subClassOf :Transport ;
+      rdfs:comment "Land transport"@en ;
+      rdfs:label "Land"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Low
+:Low rdf:type owl:Class ;
+     rdfs:subClassOf :Range ;
+     rdfs:comment "Low range of a hotel"@en ;
+     rdfs:label "Low"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Luxury
+:Luxury rdf:type owl:Class ;
+        rdfs:subClassOf :Hotel ;
+        rdfs:comment "Luxury hotels"@en ;
+        rdfs:label "Luxury"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Mediterranean
+:Mediterranean rdf:type owl:Class ;
+               rdfs:subClassOf :Cuisine ;
+               rdfs:comment "Mediterranean food restaurant"@en ;
+               rdfs:label "Mediterranean"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Medium
+:Medium rdf:type owl:Class ;
+        rdfs:subClassOf :Range ;
+        rdfs:comment "Medium range of a hotel"@en ;
+        rdfs:label "Medium"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Metro
+:Metro rdf:type owl:Class ;
+       rdfs:subClassOf :Land ;
+       rdfs:comment "Use the metro as transport"@en ;
+       rdfs:label "Metro"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Mexican
+:Mexican rdf:type owl:Class ;
+         rdfs:subClassOf :Cuisine ;
+         rdfs:comment "Mexican food restaurant"@en ;
+         rdfs:label "Mexican"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Monument
+:Monument rdf:type owl:Class ;
+          rdfs:subClassOf :Attraction ;
+          rdfs:comment "Attractions to see monuments"@en ;
+          rdfs:label "Monument"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Museum
+:Museum rdf:type owl:Class ;
+        rdfs:subClassOf :Attraction ;
+        rdfs:comment "Attractions for museums"@en ;
+        rdfs:label "Museum"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Music
+:Music rdf:type owl:Class ;
+       rdfs:subClassOf :Event ;
+       rdfs:comment "Musical events."@en ;
+       rdfs:label "Music"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Park
+:Park rdf:type owl:Class ;
+      rdfs:subClassOf :Attraction ;
+      rdfs:comment "Park attractions"@en ;
+      rdfs:label "Park"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Range
+:Range rdf:type owl:Class ;
+       rdfs:subClassOf :Restaurant ;
+       rdfs:comment "Range of a hotel" ;
+       rdfs:label "Range"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Rating
+:Rating rdf:type owl:Class ;
+        rdfs:comment "Restaurant, attraction and hotel reviews"@en ;
+        rdfs:isDefinedBy <https://dbpedia.org/ontology/rating> ;
+        rdfs:label "Rating"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Resort
+:Resort rdf:type owl:Class ;
+        rdfs:subClassOf :Hotel ;
+        rdfs:comment "Resort hotels"@en ;
+        rdfs:label "Resort"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Restaurant
+:Restaurant rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :rate_restaurant ;
+                              owl:someValuesFrom :Rating
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :rate_restaurant ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :Rating
+                            ] ;
+            rdfs:comment "Types of restaurants"@en ;
+            rdfs:label "Restaurant"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Rural
+:Rural rdf:type owl:Class ;
+       rdfs:subClassOf :Hotel ;
+       rdfs:comment "Rural hotel"@en ;
+       rdfs:label "Rural"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Sports
+:Sports rdf:type owl:Class ;
+        rdfs:subClassOf :Event ;
+        rdfs:comment "Sporting events"@en ;
+        rdfs:label "Sports"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Starts
+:Starts rdf:type owl:Class ;
+        rdfs:comment "Star rating of a hotel"@en ;
+        rdfs:isDefinedBy <https://dbpedia.org/ontology/starRating> ;
+        rdfs:label "Starts"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Taxi
+:Taxi rdf:type owl:Class ;
+      rdfs:subClassOf :Land ;
+      rdfs:comment "Use taxis as transport"@en ;
+      rdfs:label "Taxi"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Technological
+:Technological rdf:type owl:Class ;
+               rdfs:subClassOf :Event ;
+               rdfs:comment "Technology events"@en ;
+               rdfs:label "Technological"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Tourist
+:Tourist rdf:type owl:Class ;
+         rdfs:subClassOf :Hotel ;
+         rdfs:comment "Tourist hotels"@en ;
+         rdfs:label "Tourist"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Tram
+:Tram rdf:type owl:Class ;
+      rdfs:subClassOf :Land ;
+      rdfs:comment "Use the tram as transport"@en ;
+      rdfs:label "Tram"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Transport
+:Transport rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :operated_by ;
+                             owl:someValuesFrom :TransportCompany
+                           ] ;
+           rdfs:comment "Transport used in cities"@en ;
+           rdfs:label "Transport"@en .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#TransportCompany
+:TransportCompany rdf:type owl:Class ;
+                  rdfs:comment "Transport companies"@en ;
+                  rdfs:isDefinedBy <https://dbpedia.org/page/Category:Transport_companies> ;
+                  rdfs:label "TransportCompany"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Autobus_Barcelona
+:Autobus_Barcelona rdf:type owl:NamedIndividual ,
+                            :Bus ;
+                   :operated_by :Metro_Barcelona ;
+                   :averageprice_transport 8.72 ;
+                   :id_transport 9 ;
+                   :name_transport "Autobus Barcelona" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Autobus_Zaragoza
+:Autobus_Zaragoza rdf:type owl:NamedIndividual ,
+                           :Bus ;
+                  :operated_by :City_Zaragoza ;
+                  :averageprice_transport 5.79 ;
+                  :id_transport 4 ;
+                  :name_transport "Autobus Zaragoza" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Barcelona
+:Barcelona rdf:type owl:NamedIndividual ,
+                    :City ;
+           :has_attractions :Palacio_Barcelona ;
+           :has_events :Congreso_Barcelona ;
+           :has_hotels :Hotel_Del_Mar_Barcelona ;
+           :has_restaurants :Restaurante_Fusion_Barcelona ;
+           :has_transports :Autobus_Barcelona ;
+           :id 4 ;
+           :location "41.3874,2.1686"^^<http://www.w3.org/2003/01/geo/wgs84_pos#lat_long> ;
+           :name "Barcelona" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Castillo_Madrid
+:Castillo_Madrid rdf:type owl:NamedIndividual ,
+                          :Museum ;
+                 :rate_attraction <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.0> ;
+                 :id_attraction 37 ;
+                 :name_attraction "Castillo Madrid" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Castillo_Toledo
+:Castillo_Toledo rdf:type owl:NamedIndividual ,
+                          :Monument ;
+                 :rate_attraction <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.4> ;
+                 :id_attraction 10 ;
+                 :name_attraction "Castillo Toledo" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Castillo_Zaragoza
+:Castillo_Zaragoza rdf:type owl:NamedIndividual ,
+                            :Museum ;
+                   :rate_attraction <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#3.7> ;
+                   :id_attraction 1 ;
+                   :name_attraction "Castillo Zaragoza" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Catedral_Valencia
+:Catedral_Valencia rdf:type owl:NamedIndividual ,
+                            :Monument ;
+                   :rate_attraction <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.0> ;
+                   :id_attraction 62 ;
+                   :name_attraction "Catedral Valencia" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#City_Zaragoza
+:City_Zaragoza rdf:type owl:NamedIndividual ,
+                        :TransportCompany ;
+               :name_transport_company "City Zaragoza" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Congreso_Barcelona
+:Congreso_Barcelona rdf:type owl:NamedIndividual ,
+                             :Gastronomic ;
+                    :date "2024-06-28T00:00:00"^^xsd:dateTime ;
+                    :id_event 10 ;
+                    :name_event "Congreso Barcelona" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Congreso_Valencia
+:Congreso_Valencia rdf:type owl:NamedIndividual ,
+                            :Technological ;
+                   :date "2024-08-13T00:00:00"^^xsd:dateTime ;
+                   :id_event 13 ;
+                   :name_event "Congreso Valencia" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Feria_de_Toledo
+:Feria_de_Toledo rdf:type owl:NamedIndividual ,
+                          :Sports ;
+                 :date "2024-08-26T00:00:00"^^xsd:dateTime ;
+                 :id_event 5 ;
+                 :name_event "Feria de Toledo" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Festival_Madrid
+:Festival_Madrid rdf:type owl:NamedIndividual ,
+                          :Sports ;
+                 :date "2024-07-21T00:00:00"^^xsd:dateTime ;
+                 :id_event 7 ;
+                 :name_event "Festival Madrid" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Festival_Zaragoza
+:Festival_Zaragoza rdf:type owl:NamedIndividual ,
+                            :Music ;
+                   :date "2024-02-22T00:00:00"^^xsd:dateTime ;
+                   :id_event 18 ;
+                   :name_event "Festival Zaragoza" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Hotel_Del_Mar_Barcelona
+:Hotel_Del_Mar_Barcelona rdf:type owl:NamedIndividual ,
+                                  :Tourist ;
+                         :has_stars <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#5_Start> ;
+                         :rate_hotel <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.1> ;
+                         :id_hotel 34 ;
+                         :name_hotel "Hotel Del Mar Barcelona" ;
+                         :pricenight 250 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Hotel_Palace_Zaragoza
+:Hotel_Palace_Zaragoza rdf:type owl:NamedIndividual ,
+                                :Luxury ;
+                       :has_stars <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4_Start> ;
+                       :rate_hotel <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#3.8> ;
+                       :id_hotel 5 ;
+                       :name_hotel "Hotel Palace Zaragoza" ;
+                       :pricenight 120 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Hotel_Royal_Madrid
+:Hotel_Royal_Madrid rdf:type owl:NamedIndividual ,
+                             :Business ;
+                    :has_stars <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#3_Start> ;
+                    :rate_hotel <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.4> ;
+                    :id_hotel 11 ;
+                    :name_hotel "Hotel Royal Madrid" ;
+                    :pricenight 146 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Hotel_Royal_Valencia
+:Hotel_Royal_Valencia rdf:type owl:NamedIndividual ,
+                               :Tourist ;
+                      :has_stars <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#5_Start> ;
+                      :rate_hotel <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.7> ;
+                      :id_hotel 7 ;
+                      :name_hotel "Hotel Royal Valencia" ;
+                      :pricenight 76 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Hotel_Vista_Toledo
+:Hotel_Vista_Toledo rdf:type owl:NamedIndividual ,
+                             :Tourist ;
+                    :has_stars <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#3_Start> ;
+                    :rate_hotel <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.6> ;
+                    :id_hotel 23 ;
+                    :name_hotel "Hotel Vista Toledo" ;
+                    :pricenight 99.4 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Madrid
+:Madrid rdf:type owl:NamedIndividual ,
+                 :City ;
+        :has_attractions :Castillo_Madrid ;
+        :has_events :Festival_Madrid ;
+        :has_hotels :Hotel_Royal_Madrid ;
+        :has_restaurants :Restaurante_Gourmet_Madrid ;
+        :has_transports :Metro_Madrid ;
+        :id 3 ;
+        :location "40.4168,-3.7038"^^<http://www.w3.org/2003/01/geo/wgs84_pos#lat_long> ;
+        :name "Madrid" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Metro_Barcelona
+:Metro_Barcelona rdf:type owl:NamedIndividual ,
+                          :TransportCompany ;
+                 :name_transport_company "Metro Barcelona" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Metro_Madrid
+:Metro_Madrid rdf:type owl:NamedIndividual ,
+                       :Metro ;
+              :operated_by :Urban_Madrid ;
+              :averageprice_transport 8.85 ;
+              :id_transport 1 ;
+              :name_transport "Metro Madrid" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Palacio_Barcelona
+:Palacio_Barcelona rdf:type owl:NamedIndividual ,
+                            :Culture ;
+                   :rate_attraction <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.7> ;
+                   :id_attraction 19 ;
+                   :name_attraction "Palacio Barcelona" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Restaurante_Fusion_Barcelona
+:Restaurante_Fusion_Barcelona rdf:type owl:NamedIndividual ,
+                                       :Mexican ;
+                              :rate_restaurant <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#3.8> ;
+                              :averageprice 43 ;
+                              :id_restaurant 43 ;
+                              :name_restaurant "Restaurante Fusion Barcelona" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Restaurante_Fusion_Valencia
+:Restaurante_Fusion_Valencia rdf:type owl:NamedIndividual ,
+                                      :Andalusian ;
+                             :rate_restaurant <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.2> ;
+                             :averageprice 13 ;
+                             :id_restaurant 3 ;
+                             :name_restaurant "Restaurante Fusion Valencia" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Restaurante_Gourmet_Madrid
+:Restaurante_Gourmet_Madrid rdf:type owl:NamedIndividual ,
+                                     :Japanese ;
+                            :rate_restaurant <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.8> ;
+                            :averageprice 30 ;
+                            :id_restaurant 2 ;
+                            :name_restaurant "Restaurante Gourmet Madrid" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Restaurante_Gourmet_Zaragoza
+:Restaurante_Gourmet_Zaragoza rdf:type owl:NamedIndividual ,
+                                       :Andalusian ;
+                              :rate_restaurant <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.5> ;
+                              :averageprice 65 ;
+                              :id_restaurant 7 ;
+                              :name_restaurant "Restaurante Gourmet Zaragoza" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Restaurante_Tradicion_Toledo
+:Restaurante_Tradicion_Toledo rdf:type owl:NamedIndividual ,
+                                       :Mexican ;
+                              :rate_restaurant <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#3.7> ;
+                              :averageprice 46 ;
+                              :id_restaurant 1 ;
+                              :name_restaurant "Restaurante Tradicion Toledo" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Toledo
+:Toledo rdf:type owl:NamedIndividual ,
+                 :City ;
+        :has_attractions :Castillo_Toledo ;
+        :has_events :Feria_de_Toledo ;
+        :has_hotels :Hotel_Vista_Toledo ;
+        :has_transports :Tranvia_Toledo ;
+        :id 1 ;
+        :location "39.8628,-4.0273"^^<http://www.w3.org/2003/01/geo/wgs84_pos#lat_long> ;
+        :name "Toledo" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Trans_Toledo
+:Trans_Toledo rdf:type owl:NamedIndividual ,
+                       :TransportCompany ;
+              :name_transport_company "Trans Toledo" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Trans_Valencia
+:Trans_Valencia rdf:type owl:NamedIndividual ,
+                         :TransportCompany ;
+                :name_transport_company "Trans Valencia" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Tranvia_Toledo
+:Tranvia_Toledo rdf:type owl:NamedIndividual ,
+                         :Tram ;
+                :operated_by :Trans_Toledo ;
+                :averageprice_transport 3.61 ;
+                :id_transport 3 ;
+                :name_transport "Tranvia Toledo" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Tranvia_Valencia
+:Tranvia_Valencia rdf:type owl:NamedIndividual ,
+                           :Tram ;
+                  :operated_by :Trans_Valencia ;
+                  :averageprice_transport 9.05 ;
+                  :id_transport 11 ;
+                  :name_transport "Tranvia Valencia" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Urban_Madrid
+:Urban_Madrid rdf:type owl:NamedIndividual ,
+                       :TransportCompany ;
+              :name_transport_company "Urban Madrid" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Valencia
+:Valencia rdf:type owl:NamedIndividual ,
+                   :City ;
+          :has_attractions :Catedral_Valencia ;
+          :has_events :Congreso_Valencia ;
+          :has_hotels :Hotel_Royal_Valencia ;
+          :has_restaurants :Restaurante_Fusion_Valencia ;
+          :has_transports :Tranvia_Valencia ;
+          :id 2 ;
+          :location "39.4699,-0.3763"^^<http://www.w3.org/2003/01/geo/wgs84_pos#lat_long> ;
+          :name "Valencia" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Zaragoza
+:Zaragoza rdf:type owl:NamedIndividual ,
+                   :City ;
+          :has_attractions :Castillo_Zaragoza ;
+          :has_events :Festival_Zaragoza ;
+          :has_hotels :Hotel_Palace_Zaragoza ;
+          :has_restaurants :Restaurante_Gourmet_Zaragoza ;
+          :has_transports :Autobus_Zaragoza ;
+          :id 5 ;
+          :location "41.6488,-0.8891"^^<http://www.w3.org/2003/01/geo/wgs84_pos#lat_long> ;
+          :name "Zaragoza" .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#1_Start
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#1_Start> rdf:type owl:NamedIndividual ,
+                                                                                    :Starts ;
+                                                                           :name "1 Start" ;
+                                                                           :valuestart 1 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#2_Start
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#2_Start> rdf:type owl:NamedIndividual ,
+                                                                                    :Starts ;
+                                                                           :name "2 Start" ;
+                                                                           :valuestart 2 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#3_Start
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#3_Start> rdf:type owl:NamedIndividual ,
+                                                                                    :Starts ;
+                                                                           :name "3 Start" ;
+                                                                           :valuestart 3 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#3.7
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#3.7> rdf:type owl:NamedIndividual ,
+                                                                                :Rating ;
+                                                                       :has_restaurants :Restaurante_Tradicion_Toledo ;
+                                                                       :value 3.7 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#3.8
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#3.8> rdf:type owl:NamedIndividual ,
+                                                                                :Rating ;
+                                                                       :value 3.8 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4_Start
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4_Start> rdf:type owl:NamedIndividual ,
+                                                                                    :Starts ;
+                                                                           :name "4 Start" ;
+                                                                           :valuestart 4 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.0
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.0> rdf:type owl:NamedIndividual ,
+                                                                                :Rating ;
+                                                                       :value 4.0 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.1
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.1> rdf:type owl:NamedIndividual ,
+                                                                                :Rating ;
+                                                                       :value 4.1 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.2
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.2> rdf:type owl:NamedIndividual ,
+                                                                                :Rating ;
+                                                                       :value 4.2 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.4
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.4> rdf:type owl:NamedIndividual ,
+                                                                                :Rating ;
+                                                                       :value 4.4 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.5
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.5> rdf:type owl:NamedIndividual ,
+                                                                                :Rating ;
+                                                                       :value 4.5 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.6
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.6> rdf:type owl:NamedIndividual ,
+                                                                                :Rating ;
+                                                                       :value 4.6 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.7
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.7> rdf:type owl:NamedIndividual ,
+                                                                                :Rating ;
+                                                                       :value 4.7 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.8
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.8> rdf:type owl:NamedIndividual ,
+                                                                                :Rating ;
+                                                                       :value 4.8 .
+
+
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#5_Start
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#5_Start> rdf:type owl:NamedIndividual ,
+                                                                                    :Starts ;
+                                                                           :name "5 Start" ;
+                                                                           :valuestart 5 .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Andalusian
+                :Italian
+                :Japanese
+                :Mediterranean
+                :Mexican
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Beach
+                :Culture
+                :Monument
+                :Museum
+                :Park
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Bicycle
+                :Bus
+                :Metro
+                :Taxi
+                :Tram
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Business
+                :Luxury
+                :Resort
+                :Tourist
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Cultural
+                :Gastronomic
+                :Music
+                :Sports
+                :Technological
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/v> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "We indicate that the restaurant with a rating of 3.7 is a low ranking restaurant." ;
+   rdfs:label "Rule3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Restaurant ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :rate_restaurant ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/v>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :value ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/v> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> 3.7
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Low ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "We indicate that the restaurant with a rating of 4.8 is of high rank." ;
+   rdfs:label "Rule2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Restaurant ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :rate_restaurant ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/v>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :value ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/v> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> 4.8
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :High ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "We indicate that the restaurant ‘Restaurante Fusion Valencia’ is a medium-range restaurant." ;
+   rdfs:label "Rule1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Restaurant ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :name_restaurant ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> "Restaurante Fusion Valencia"
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Medium ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
