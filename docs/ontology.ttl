@@ -14,13 +14,13 @@ The ontology will focus solely on information related to tourist services offere
 Goals:
 The objective is for this ontology to be used to develop an application that provides information about relevant tourist services. This information can be utilized by private users seeking tourist information about a specific city, as well as by other applications, such as those used by travel agencies for planning organized trips.""" ;
                                                                     <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                                                                    <http://purl.org/dc/terms/modified> "2024-04-12T18:00:00"^^xsd:dateTime ;
+                                                                    <http://purl.org/dc/terms/modified> "2024-04-15T12:00:00"^^xsd:dateTime ;
                                                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "tourism" ;
-                                                                    :dc:contributor "Raúl Ríos Redondo and José María Aguirre Carbonero"@en ;
-                                                                    :dc:created "2025-04-04T18:00:00"^^xsd:dateTime ;
-                                                                    :dc:creator "Raúl Ríos Redondo and José María Aguirre Carbonero"@en ;
-                                                                    :dc:description "This is a Ontology provide terms related with tourist and recomendatios including cities, restaurants, events, touristic attactions and transportations."@en ;
-                                                                    :dc:title "Smart Tourism Ontology and Touristic recomendations"@en ;
+                                                                    :dcterms:contributor "Raúl Ríos Redondo and José María Aguirre Carbonero"@en ;
+                                                                    :dcterms:created "2024-04-04T18:00:00"^^xsd:dateTime ;
+                                                                    :dcterms:creator "Raúl Ríos Redondo and José María Aguirre Carbonero"@en ;
+                                                                    :dcterms:description "This is a Ontology provide terms related with tourist and recomendatios including cities, restaurants, events, touristic attactions and transportations."@en ;
+                                                                    :dcterms:title "Smart Tourism Ontology and Touristic recomendations"@en ;
                                                                     rdfs:comment "It corresponds to the PEC2 of the subject “Knowledge Representation”."@en ;
                                                                     rdfs:isDefinedBy "José María Aguirre Carbonero &   Raúl Ríos Redondo"@en ;
                                                                     rdfs:label "Smart Tourism Ontology and Recommendations"@en ;
@@ -34,6 +34,10 @@ The working in this ontology is ongoing."""@en .
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/elements/1.1title
+<http://purl.org/dc/elements/1.1title> rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/terms/abstract
 <http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
@@ -55,24 +59,24 @@ The working in this ontology is ongoing."""@en .
 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
 
 
-###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:contributor
-:dc:contributor rdf:type owl:AnnotationProperty .
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:contributor
+:dcterms:contributor rdf:type owl:AnnotationProperty .
 
 
-###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:created
-:dc:created rdf:type owl:AnnotationProperty .
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:created
+:dcterms:created rdf:type owl:AnnotationProperty .
 
 
-###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:creator
-:dc:creator rdf:type owl:AnnotationProperty .
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:creator
+:dcterms:creator rdf:type owl:AnnotationProperty .
 
 
-###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:description
-:dc:description rdf:type owl:AnnotationProperty .
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:description
+:dcterms:description rdf:type owl:AnnotationProperty .
 
 
-###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:title
-:dc:title rdf:type owl:AnnotationProperty .
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:title
+:dcterms:title rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#sameAS
@@ -97,6 +101,30 @@ rdfs:sameAS rdf:type owl:AnnotationProperty .
 <http://www.w3.org/2003/01/geo/wgs84_pos#location> rdf:type rdfs:Datatype ;
                                                    rdfs:comment "The relation between something and the point, or other geometrical thing in space, where it is. For example, the realtionship between a radio tower and a Point with a given lat and long. Or a relationship between a park and its outline as a closed arc of points, or a road and its location as a arc (a sequence of points). Clearly in practice there will be limit to the accuracy of any such statement, but one would expect an accuracy appropriate for the size of the object and uses such as mapping ." ;
                                                    rdfs:label "location"@en .
+
+
+###  http://www.w3.org/2003/11/swrl#AtomList
+<http://www.w3.org/2003/11/swrl#AtomList> rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2003/11/swrl#ClassAtom
+<http://www.w3.org/2003/11/swrl#ClassAtom> rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom
+<http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2003/11/swrl#Imp
+<http://www.w3.org/2003/11/swrl#Imp> rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2003/11/swrl#IndividualPropertyAtom
+<http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2003/11/swrl#Variable
+<http://www.w3.org/2003/11/swrl#Variable> rdf:type rdfs:Datatype .
 
 
 #################################################################
@@ -140,7 +168,8 @@ rdfs:sameAS rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#has_stars
-:has_stars rdf:type owl:ObjectProperty ;
+:has_stars rdf:type owl:ObjectProperty ,
+                    owl:AsymmetricProperty ;
            rdfs:domain :Hotel ;
            rdfs:range :Starts ;
            rdfs:comment "This object property provides the stars of a hotel"@en ;
@@ -157,15 +186,17 @@ rdfs:sameAS rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#operated_by
-:operated_by rdf:type owl:ObjectProperty ;
+:operated_by rdf:type owl:ObjectProperty ,
+                      owl:AsymmetricProperty ;
              rdfs:domain :Transport ;
-             rdfs:range :TransportCompany ;
+             rdfs:range :Transport_Company ;
              rdfs:comment "This object property provides the company by which a transport is operated."@en ;
              rdfs:label "operated_by"@en .
 
 
 ###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_attraction
-:rate_attraction rdf:type owl:ObjectProperty ;
+:rate_attraction rdf:type owl:ObjectProperty ,
+                          owl:AsymmetricProperty ;
                  rdfs:domain :Attraction ;
                  rdfs:range :Rating ;
                  rdfs:comment "This property of object facilitates the valuation of an attraction"@en ;
@@ -173,7 +204,8 @@ rdfs:sameAS rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_hotel
-:rate_hotel rdf:type owl:ObjectProperty ;
+:rate_hotel rdf:type owl:ObjectProperty ,
+                     owl:AsymmetricProperty ;
             rdfs:domain :Hotel ;
             rdfs:range :Rating ;
             rdfs:comment "This property of object facilitates the valuation of a hotel"@en ;
@@ -181,7 +213,8 @@ rdfs:sameAS rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_restaurant
-:rate_restaurant rdf:type owl:ObjectProperty ;
+:rate_restaurant rdf:type owl:ObjectProperty ,
+                          owl:AsymmetricProperty ;
                  rdfs:domain :Restaurant ;
                  rdfs:range :Rating ;
                  rdfs:comment "Esta propiedad de objeto facilita la valoración de un restaurante"@en ;
@@ -332,7 +365,7 @@ rdfs:sameAS rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#name_transport_company
 :name_transport_company rdf:type owl:DatatypeProperty ;
-                        rdfs:domain :TransportCompany ;
+                        rdfs:domain :Transport_Company ;
                         rdfs:range xsd:string ;
                         rdfs:comment "Identifying name of  TransportCompany"@en ;
                         rdfs:label "name_transport_company"@en .
@@ -668,17 +701,17 @@ rdfs:sameAS rdf:type owl:AnnotationProperty .
 :Transport rdf:type owl:Class ;
            rdfs:subClassOf [ rdf:type owl:Restriction ;
                              owl:onProperty :operated_by ;
-                             owl:someValuesFrom :TransportCompany
+                             owl:someValuesFrom :Transport_Company
                            ] ;
            rdfs:comment "Transport used in cities"@en ;
            rdfs:label "Transport"@en .
 
 
-###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#TransportCompany
-:TransportCompany rdf:type owl:Class ;
-                  rdfs:comment "Transport companies"@en ;
-                  rdfs:isDefinedBy <https://dbpedia.org/page/Category:Transport_companies> ;
-                  rdfs:label "TransportCompany"@en .
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Transport_Company
+:Transport_Company rdf:type owl:Class ;
+                   rdfs:comment "Transport companies"@en ;
+                   rdfs:isDefinedBy <https://dbpedia.org/page/Category:Transport_companies> ;
+                   rdfs:label "TransportCompany"@en .
 
 
 #################################################################
@@ -750,7 +783,7 @@ rdfs:sameAS rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#City_Zaragoza
 :City_Zaragoza rdf:type owl:NamedIndividual ,
-                        :TransportCompany ;
+                        :Transport_Company ;
                :name_transport_company "City Zaragoza" .
 
 
@@ -859,7 +892,7 @@ rdfs:sameAS rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Metro_Barcelona
 :Metro_Barcelona rdf:type owl:NamedIndividual ,
-                          :TransportCompany ;
+                          :Transport_Company ;
                  :name_transport_company "Metro Barcelona" .
 
 
@@ -939,13 +972,13 @@ rdfs:sameAS rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Trans_Toledo
 :Trans_Toledo rdf:type owl:NamedIndividual ,
-                       :TransportCompany ;
+                       :Transport_Company ;
               :name_transport_company "Trans Toledo" .
 
 
 ###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Trans_Valencia
 :Trans_Valencia rdf:type owl:NamedIndividual ,
-                         :TransportCompany ;
+                         :Transport_Company ;
                 :name_transport_company "Trans Valencia" .
 
 
@@ -969,7 +1002,7 @@ rdfs:sameAS rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Urban_Madrid
 :Urban_Madrid rdf:type owl:NamedIndividual ,
-                       :TransportCompany ;
+                       :Transport_Company ;
               :name_transport_company "Urban Madrid" .
 
 

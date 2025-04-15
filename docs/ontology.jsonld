@@ -109,10 +109,12 @@
   } ]
 }, {
   "@id" : "_:genid39",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#Imp"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "We indicate that the restaurant with a rating of 3.7 is a low ranking restaurant."
@@ -121,18 +123,10 @@
     "@value" : "Rule3"
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
-    "@list" : [ {
-      "@id" : "_:genid45"
-    }, {
-      "@id" : "_:genid43"
-    }, {
-      "@id" : "_:genid41"
-    } ]
+    "@id" : "_:genid44"
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@list" : [ {
-      "@id" : "_:genid47"
-    } ]
+    "@id" : "_:genid46"
   } ]
 }, {
   "@id" : "_:genid4",
@@ -144,8 +138,21 @@
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Rating"
   } ]
 }, {
+  "@id" : "_:genid40",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid41"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@list" : [ ]
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
   "@id" : "_:genid41",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"
+  } ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/v"
   } ],
@@ -157,8 +164,21 @@
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#value"
   } ]
 }, {
+  "@id" : "_:genid42",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid43"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@id" : "_:genid40"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
   "@id" : "_:genid43",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"
+  } ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r"
   } ],
@@ -169,8 +189,21 @@
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_restaurant"
   } ]
 }, {
+  "@id" : "_:genid44",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid45"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@id" : "_:genid42"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
   "@id" : "_:genid45",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#ClassAtom"
+  } ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r"
   } ],
@@ -178,8 +211,21 @@
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Restaurant"
   } ]
 }, {
+  "@id" : "_:genid46",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid47"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@list" : [ ]
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
   "@id" : "_:genid47",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#ClassAtom"
+  } ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r"
   } ],
@@ -188,10 +234,12 @@
   } ]
 }, {
   "@id" : "_:genid48",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#Imp"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "We indicate that the restaurant with a rating of 4.8 is of high rank."
@@ -200,18 +248,21 @@
     "@value" : "Rule2"
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
-    "@list" : [ {
-      "@id" : "_:genid54"
-    }, {
-      "@id" : "_:genid52"
-    }, {
-      "@id" : "_:genid50"
-    } ]
+    "@id" : "_:genid53"
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@list" : [ {
-      "@id" : "_:genid56"
-    } ]
+    "@id" : "_:genid55"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid50"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@list" : [ ]
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
   } ]
 }, {
   "@id" : "_:genid5",
@@ -228,7 +279,9 @@
   } ]
 }, {
   "@id" : "_:genid50",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"
+  } ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/v"
   } ],
@@ -240,8 +293,21 @@
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#value"
   } ]
 }, {
+  "@id" : "_:genid51",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid52"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@id" : "_:genid49"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
   "@id" : "_:genid52",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"
+  } ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r"
   } ],
@@ -252,8 +318,21 @@
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_restaurant"
   } ]
 }, {
+  "@id" : "_:genid53",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid54"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@id" : "_:genid51"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
   "@id" : "_:genid54",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#ClassAtom"
+  } ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r"
   } ],
@@ -261,8 +340,21 @@
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Restaurant"
   } ]
 }, {
+  "@id" : "_:genid55",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid56"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@list" : [ ]
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
   "@id" : "_:genid56",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#ClassAtom"
+  } ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r"
   } ],
@@ -271,10 +363,12 @@
   } ]
 }, {
   "@id" : "_:genid57",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#Imp"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "We indicate that the restaurant ‘Restaurante Fusion Valencia’ is a medium-range restaurant."
@@ -283,20 +377,27 @@
     "@value" : "Rule1"
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
-    "@list" : [ {
-      "@id" : "_:genid61"
-    }, {
-      "@id" : "_:genid59"
-    } ]
+    "@id" : "_:genid60"
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@list" : [ {
-      "@id" : "_:genid63"
-    } ]
+    "@id" : "_:genid62"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid59"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@list" : [ ]
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
   } ]
 }, {
   "@id" : "_:genid59",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"
+  } ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r"
   } ],
@@ -320,8 +421,21 @@
     "@value" : "1"
   } ]
 }, {
+  "@id" : "_:genid60",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid61"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@id" : "_:genid58"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
   "@id" : "_:genid61",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#ClassAtom"
+  } ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r"
   } ],
@@ -329,8 +443,21 @@
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Restaurant"
   } ]
 }, {
+  "@id" : "_:genid62",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [ {
+    "@id" : "_:genid63"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [ {
+    "@list" : [ ]
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#AtomList"
+  } ]
+}, {
   "@id" : "_:genid63",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#ClassAtom"
+  } ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r"
   } ],
@@ -366,8 +493,11 @@
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#operated_by"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#TransportCompany"
+    "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Transport_Company"
   } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -394,28 +524,28 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2024-04-12T18:00:00"
+    "@value" : "2024-04-15T12:00:00"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "tourism"
   } ],
-  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:contributor" : [ {
+  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:contributor" : [ {
     "@language" : "en",
     "@value" : "Raúl Ríos Redondo and José María Aguirre Carbonero"
   } ],
-  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:created" : [ {
+  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2025-04-04T18:00:00"
+    "@value" : "2024-04-04T18:00:00"
   } ],
-  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:creator" : [ {
+  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:creator" : [ {
     "@language" : "en",
     "@value" : "Raúl Ríos Redondo and José María Aguirre Carbonero"
   } ],
-  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:description" : [ {
+  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:description" : [ {
     "@language" : "en",
     "@value" : "This is a Ontology provide terms related with tourist and recomendatios including cities, restaurants, events, touristic attactions and transportations."
   } ],
-  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:title" : [ {
+  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:title" : [ {
     "@language" : "en",
     "@value" : "Smart Tourism Ontology and Touristic recomendations"
   } ],
@@ -849,7 +979,7 @@
     "@value" : "City Zaragoza"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#TransportCompany"
+    "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Transport_Company"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Congreso_Barcelona",
@@ -1303,7 +1433,7 @@
     "@value" : "Metro Barcelona"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#TransportCompany"
+    "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Transport_Company"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Metro_Madrid",
@@ -1702,7 +1832,7 @@
     "@value" : "Trans Toledo"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#TransportCompany"
+    "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Transport_Company"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Trans_Valencia",
@@ -1711,7 +1841,7 @@
     "@value" : "Trans Valencia"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#TransportCompany"
+    "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Transport_Company"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Transport",
@@ -1728,7 +1858,7 @@
     "@id" : "_:genid9"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#TransportCompany",
+  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Transport_Company",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1788,7 +1918,7 @@
     "@value" : "Urban Madrid"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#TransportCompany"
+    "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Transport_Company"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Valencia",
@@ -1906,19 +2036,19 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:contributor",
+  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:created",
+  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:created",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:creator",
+  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:description",
+  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:title",
+  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#has_attractions",
@@ -1990,7 +2120,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#has_stars",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "This object property provides the stars of a hotel"
@@ -2268,7 +2398,7 @@
     "@value" : "Identifying name of  TransportCompany"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#TransportCompany"
+    "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Transport_Company"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2279,7 +2409,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#operated_by",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "This object property provides the company by which a transport is operated."
@@ -2292,7 +2422,7 @@
     "@value" : "operated_by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#TransportCompany"
+    "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Transport_Company"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#pricenight",
@@ -2313,7 +2443,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_attraction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "This property of object facilitates the valuation of an attraction"
@@ -2330,7 +2460,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_hotel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "This property of object facilitates the valuation of a hotel"
@@ -2347,7 +2477,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_restaurant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Esta propiedad de objeto facilita la valoración de un restaurante"
@@ -2398,10 +2528,14 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/r",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#Variable"
+  } ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/v",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrl#Variable"
+  } ]
 }, {
   "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAS",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -2426,6 +2560,24 @@
     "@language" : "en",
     "@value" : "location"
   } ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#AtomList",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#ClassAtom",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#Imp",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrl#Variable",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
   "@id" : "https://w3id.org/widoco/vocab#introduction",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
