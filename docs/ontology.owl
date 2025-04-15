@@ -12,11 +12,13 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:vocab="https://w3id.org/widoco/vocab#"
+     xmlns:terms1="http://purl.org/dc/elements/terms:"
+     xmlns:terms2="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:"
      xmlns:dcterms="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:"
-     xmlns:tourism="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#"
-     xmlns:elements="http://purl.org/dc/elements/1.1">
+     xmlns:tourism="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/1.0"/>
+        <terms1:title xml:lang="en">Smart Tourism Ontology and Touristic recomendations</terms1:title>
         <terms:abstract>Scope:
 The ontology will focus solely on information related to tourist services offered by certain cities, including information about hotels, events, transportation, restaurants, and tourist attractions.
 
@@ -26,14 +28,14 @@ The objective is for this ontology to be used to develop an application that pro
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-15T12:00:00</terms:modified>
         <vann:preferredNamespacePrefix>tourism</vann:preferredNamespacePrefix>
         <dcterms:contributor xml:lang="en">Raúl Ríos Redondo and José María Aguirre Carbonero</dcterms:contributor>
-        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-04T18:00:00</dcterms:created>
-        <dcterms:creator xml:lang="en">Raúl Ríos Redondo and José María Aguirre Carbonero</dcterms:creator>
         <dcterms:description xml:lang="en">This is a Ontology provide terms related with tourist and recomendatios including cities, restaurants, events, touristic attactions and transportations.</dcterms:description>
-        <dcterms:title xml:lang="en">Smart Tourism Ontology and Touristic recomendations</dcterms:title>
+        <terms2:created>April 4th, 2025</terms2:created>
+        <terms2:creator xml:lang="en">José María Aguirre Carbonero</terms2:creator>
+        <terms2:creator xml:lang="en">Raúl Ríos Redondo</terms2:creator>
         <rdfs:comment xml:lang="en">It corresponds to the PEC2 of the subject “Knowledge Representation”.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">José María Aguirre Carbonero &amp;   Raúl Ríos Redondo</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Smart Tourism Ontology and Recommendations</rdfs:label>
-        <owl:priorVersion rdf:resource="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/1.0.0"/>
+        <owl:priorVersion rdf:resource="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/1.0"/>
         <vocab:introduction xml:lang="en">The ontology will focus solely on information related to tourist services offered by certain cities, including information about hotels, events, transportation, restaurants, and tourist attractions.
 
 The objective is for this ontology to be used to develop an application that provides information about relevant tourist services. This information can be utilized by private users seeking tourist information about a specific city, as well as by other applications, such as those used by travel agencies for planning organized trips.
@@ -55,10 +57,10 @@ The working in this ontology is ongoing.</vocab:introduction>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1title -->
+    <!-- http://purl.org/dc/elements/terms:title -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1title"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/terms:title"/>
     
 
 
@@ -104,20 +106,6 @@ The working in this ontology is ongoing.</vocab:introduction>
     
 
 
-    <!-- http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:created -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:created"/>
-    
-
-
-    <!-- http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:creator -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:creator"/>
-    
-
-
     <!-- http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:description -->
 
 
@@ -125,10 +113,24 @@ The working in this ontology is ongoing.</vocab:introduction>
     
 
 
-    <!-- http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:title -->
+    <!-- http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:created -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:title"/>
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:created"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:creator"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:title"/>
     
 
 
@@ -155,6 +157,13 @@ The working in this ontology is ongoing.</vocab:introduction>
      -->
 
 
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 

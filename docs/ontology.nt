@@ -1,18 +1,19 @@
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/1.0> .
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://purl.org/dc/elements/terms:title> "Smart Tourism Ontology and Touristic recomendations"@en .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://purl.org/dc/terms/abstract> "Scope:\nThe ontology will focus solely on information related to tourist services offered by certain cities, including information about hotels, events, transportation, restaurants, and tourist attractions.\n\nGoals:\nThe objective is for this ontology to be used to develop an application that provides information about relevant tourist services. This information can be utilized by private users seeking tourist information about a specific city, as well as by other applications, such as those used by travel agencies for planning organized trips." .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://purl.org/dc/terms/modified> "2024-04-15T12:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tourism" .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:contributor> "Raúl Ríos Redondo and José María Aguirre Carbonero"@en .
-<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:created> "2024-04-04T18:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:creator> "Raúl Ríos Redondo and José María Aguirre Carbonero"@en .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:description> "This is a Ontology provide terms related with tourist and recomendatios including cities, restaurants, events, touristic attactions and transportations."@en .
-<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:title> "Smart Tourism Ontology and Touristic recomendations"@en .
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:created> "April 4th, 2025" .
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:creator> "José María Aguirre Carbonero"@en .
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:creator> "Raúl Ríos Redondo"@en .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://www.w3.org/2000/01/rdf-schema#comment> "It corresponds to the PEC2 of the subject “Knowledge Representation”."@en .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "José María Aguirre Carbonero &   Raúl Ríos Redondo"@en .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://www.w3.org/2000/01/rdf-schema#label> "Smart Tourism Ontology and Recommendations"@en .
-<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://www.w3.org/2002/07/owl#priorVersion> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/1.0.0> .
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <http://www.w3.org/2002/07/owl#priorVersion> <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/1.0> .
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism> <https://w3id.org/widoco/vocab#introduction> "The ontology will focus solely on information related to tourist services offered by certain cities, including information about hotels, events, transportation, restaurants, and tourist attractions.\n\nThe objective is for this ontology to be used to develop an application that provides information about relevant tourist services. This information can be utilized by private users seeking tourist information about a specific city, as well as by other applications, such as those used by travel agencies for planning organized trips.\n\nThe working in this ontology is ongoing."@en .
 # 
 # 
@@ -23,8 +24,8 @@
 # #################################################################
 # 
 # 
-# http://purl.org/dc/elements/1.1title
-<http://purl.org/dc/elements/1.1title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# http://purl.org/dc/elements/terms:title
+<http://purl.org/dc/elements/terms:title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/abstract
 <http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -44,17 +45,17 @@
 # http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:contributor
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:created
-<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:creator
-<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:description
 <http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:title
-<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:created
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:creator
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:title
+<http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2000/01/rdf-schema#sameAS
 <http://www.w3.org/2000/01/rdf-schema#sameAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -70,6 +71,9 @@
 # #
 # #################################################################
 # 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 # 
 # http://www.w3.org/2003/01/geo/wgs84_pos#lat_long
 <http://www.w3.org/2003/01/geo/wgs84_pos#lat_long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .

@@ -496,7 +496,7 @@
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Transport_Company"
   } ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1title",
+  "@id" : "http://purl.org/dc/elements/terms:title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/abstract",
@@ -516,6 +516,10 @@
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/terms:title" : [ {
+    "@language" : "en",
+    "@value" : "Smart Tourism Ontology and Touristic recomendations"
+  } ],
   "http://purl.org/dc/terms/abstract" : [ {
     "@value" : "Scope:\nThe ontology will focus solely on information related to tourist services offered by certain cities, including information about hotels, events, transportation, restaurants, and tourist attractions.\n\nGoals:\nThe objective is for this ontology to be used to develop an application that provides information about relevant tourist services. This information can be utilized by private users seeking tourist information about a specific city, as well as by other applications, such as those used by travel agencies for planning organized trips."
   } ],
@@ -533,21 +537,19 @@
     "@language" : "en",
     "@value" : "Raúl Ríos Redondo and José María Aguirre Carbonero"
   } ],
-  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2024-04-04T18:00:00"
-  } ],
-  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:creator" : [ {
-    "@language" : "en",
-    "@value" : "Raúl Ríos Redondo and José María Aguirre Carbonero"
-  } ],
   "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:description" : [ {
     "@language" : "en",
     "@value" : "This is a Ontology provide terms related with tourist and recomendatios including cities, restaurants, events, touristic attactions and transportations."
   } ],
-  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:title" : [ {
+  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:created" : [ {
+    "@value" : "April 4th, 2025"
+  } ],
+  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:creator" : [ {
     "@language" : "en",
-    "@value" : "Smart Tourism Ontology and Touristic recomendations"
+    "@value" : "José María Aguirre Carbonero"
+  }, {
+    "@language" : "en",
+    "@value" : "Raúl Ríos Redondo"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -562,7 +564,7 @@
     "@value" : "Smart Tourism Ontology and Recommendations"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
-    "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/1.0.0"
+    "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/1.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism/1.0"
@@ -2039,16 +2041,7 @@
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:created",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:creator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:description",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dcterms:title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#has_attractions",
@@ -2493,6 +2486,15 @@
     "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Rating"
   } ]
 }, {
+  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#terms:title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#value",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2539,6 +2541,9 @@
 }, {
   "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAS",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
   "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat_long",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
