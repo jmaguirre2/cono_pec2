@@ -16,11 +16,11 @@ The objective is for this ontology to be used to develop an application that pro
                                                                     <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                                                     <http://purl.org/dc/terms/modified> "2024-04-12T18:00:00"^^xsd:dateTime ;
                                                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "tourism" ;
-                                                                    :dct:contributor "Raúl Ríos Redondo and José María Aguirre Carbonero"@en ;
-                                                                    :dct:created "2025-04-04T18:00:00"^^xsd:dateTime ;
-                                                                    :dct:creator "Raúl Ríos Redondo and José María Aguirre Carbonero"@en ;
-                                                                    :dct:description "This is a Ontology provide terms related with tourist and recomendatios including cities, restaurants, events, touristic attactions and transportations."@en ;
-                                                                    :dct:title "Smart Tourism Ontology and Touristic recomendations"@en ;
+                                                                    :dc:contributor "Raúl Ríos Redondo and José María Aguirre Carbonero"@en ;
+                                                                    :dc:created "2025-04-04T18:00:00"^^xsd:dateTime ;
+                                                                    :dc:creator "Raúl Ríos Redondo and José María Aguirre Carbonero"@en ;
+                                                                    :dc:description "This is a Ontology provide terms related with tourist and recomendatios including cities, restaurants, events, touristic attactions and transportations."@en ;
+                                                                    :dc:title "Smart Tourism Ontology and Touristic recomendations"@en ;
                                                                     rdfs:comment "It corresponds to the PEC2 of the subject “Knowledge Representation”."@en ;
                                                                     rdfs:isDefinedBy "José María Aguirre Carbonero &   Raúl Ríos Redondo"@en ;
                                                                     rdfs:label "Smart Tourism Ontology and Recommendations"@en ;
@@ -55,24 +55,24 @@ The working in this ontology is ongoing."""@en .
 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
 
 
-###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:contributor
-:dct:contributor rdf:type owl:AnnotationProperty .
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:contributor
+:dc:contributor rdf:type owl:AnnotationProperty .
 
 
-###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:created
-:dct:created rdf:type owl:AnnotationProperty .
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:created
+:dc:created rdf:type owl:AnnotationProperty .
 
 
-###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:creator
-:dct:creator rdf:type owl:AnnotationProperty .
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:creator
+:dc:creator rdf:type owl:AnnotationProperty .
 
 
-###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:description
-:dct:description rdf:type owl:AnnotationProperty .
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:description
+:dc:description rdf:type owl:AnnotationProperty .
 
 
-###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:title
-:dct:title rdf:type owl:AnnotationProperty .
+###  http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:title
+:dc:title rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#sameAS

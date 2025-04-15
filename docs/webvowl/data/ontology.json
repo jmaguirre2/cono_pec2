@@ -36,16 +36,16 @@
         "value" : "Raúl Ríos Redondo and José María Aguirre Carbonero",
         "type" : "label"
       } ],
-      "contributor" : [ {
-        "identifier" : "contributor",
-        "language" : "en",
-        "value" : "Raúl Ríos Redondo and José María Aguirre Carbonero",
-        "type" : "label"
-      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "en",
         "value" : "José María Aguirre Carbonero &   Raúl Ríos Redondo",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Raúl Ríos Redondo and José María Aguirre Carbonero",
         "type" : "label"
       } ],
       "created" : [ {
@@ -199,7 +199,7 @@
     "id" : "82",
     "type" : "owl:Class"
   }, {
-    "id" : "52",
+    "id" : "54",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "117",
@@ -229,7 +229,7 @@
     "id" : "13",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "54",
+    "id" : "52",
     "type" : "owl:Class"
   }, {
     "id" : "123",
@@ -442,16 +442,16 @@
       "en" : "City"
     },
     "individuals" : [ {
-      "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Toledo",
-      "baseIri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism",
-      "labels" : {
-        "IRI-based" : "Toledo"
-      }
-    }, {
       "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Valencia",
       "baseIri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism",
       "labels" : {
         "IRI-based" : "Valencia"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Toledo",
+      "baseIri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism",
+      "labels" : {
+        "IRI-based" : "Toledo"
       }
     }, {
       "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#Madrid",
@@ -575,16 +575,16 @@
         "IRI-based" : "4.5"
       }
     }, {
-      "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#3.7",
-      "baseIri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism",
-      "labels" : {
-        "IRI-based" : "3.7"
-      }
-    }, {
       "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.6",
       "baseIri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism",
       "labels" : {
         "IRI-based" : "4.6"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#3.7",
+      "baseIri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism",
+      "labels" : {
+        "IRI-based" : "3.7"
       }
     }, {
       "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#4.7",
@@ -983,7 +983,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "52",
+    "id" : "54",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1081,7 +1081,7 @@
       "en" : "Land transport"
     },
     "id" : "77",
-    "superClasses" : [ "54" ]
+    "superClasses" : [ "52" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -1108,7 +1108,7 @@
     "comment" : {
       "en" : "Transport used in cities"
     },
-    "id" : "54"
+    "id" : "52"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -1351,10 +1351,10 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "51",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "53",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "55",
     "type" : "owl:disjointWith"
@@ -1498,10 +1498,10 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "131",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "132",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "133",
     "type" : "rdfs:SubClassOf"
@@ -1626,7 +1626,7 @@
   "propertyAttribute" : [ {
     "range" : "10",
     "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "8"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#id_hotel",
@@ -1659,12 +1659,12 @@
   }, {
     "range" : "10",
     "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "17"
   }, {
     "range" : "9",
     "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "19"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#id_event",
@@ -1683,42 +1683,42 @@
   }, {
     "range" : "18",
     "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "23"
   }, {
     "range" : "10",
     "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "25"
   }, {
     "range" : "10",
     "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "27"
   }, {
     "range" : "9",
     "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "28"
   }, {
     "range" : "24",
     "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "29"
   }, {
     "range" : "32",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "30"
   }, {
     "range" : "9",
     "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "33"
   }, {
     "range" : "18",
     "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "34"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#has_hotels",
@@ -1737,56 +1737,42 @@
   }, {
     "range" : "38",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "37"
   }, {
     "range" : "38",
     "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "39"
   }, {
     "range" : "31",
     "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "42"
   }, {
     "range" : "32",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "45"
   }, {
     "range" : "32",
     "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "47"
   }, {
     "range" : "32",
     "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "48"
   }, {
     "range" : "31",
     "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "50"
-  }, {
-    "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#name",
-    "baseIri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism",
-    "range" : "52",
-    "label" : {
-      "IRI-based" : "name",
-      "en" : "name_city"
-    },
-    "domain" : "36",
-    "comment" : {
-      "en" : "Identifying name of City"
-    },
-    "attributes" : [ "datatype", "functional" ],
-    "id" : "51"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#has_transports",
     "baseIri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism",
-    "range" : "54",
+    "range" : "52",
     "label" : {
       "IRI-based" : "has_transports",
       "en" : "has_transports"
@@ -1796,16 +1782,30 @@
       "en" : "This object property facilitates the transports of a city."
     },
     "attributes" : [ "object", "asymmetric" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#name",
+    "baseIri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "name_city"
+    },
+    "domain" : "36",
+    "comment" : {
+      "en" : "Identifying name of City"
+    },
+    "attributes" : [ "functional", "datatype" ],
     "id" : "53"
   }, {
     "range" : "31",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "55"
   }, {
     "range" : "43",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "61"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_attraction",
@@ -1824,32 +1824,32 @@
   }, {
     "range" : "38",
     "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "65"
   }, {
     "range" : "16",
     "domain" : "63",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "66"
   }, {
     "range" : "43",
     "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "67"
   }, {
     "range" : "46",
     "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "68"
   }, {
     "range" : "38",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "69"
   }, {
     "range" : "38",
     "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "70"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#operated_by",
@@ -1859,7 +1859,7 @@
       "IRI-based" : "operated_by",
       "en" : "operated_by"
     },
-    "domain" : "54",
+    "domain" : "52",
     "comment" : {
       "en" : "This object property provides the company by which a transport is operated."
     },
@@ -1908,23 +1908,23 @@
     "attributes" : [ "datatype" ],
     "id" : "78"
   }, {
-    "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_hotel",
+    "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#has_stars",
     "baseIri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism",
-    "range" : "62",
+    "range" : "0",
     "label" : {
-      "IRI-based" : "rate_hotel",
-      "en" : "rate_hotel"
+      "IRI-based" : "has_stars",
+      "en" : "has_starts"
     },
     "domain" : "12",
     "comment" : {
-      "en" : "This property of object facilitates the valuation of a hotel"
+      "en" : "This object property provides the stars of a hotel"
     },
     "attributes" : [ "object", "someValues" ],
     "id" : "80"
   }, {
     "range" : "83",
     "domain" : "82",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "81"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_restaurant",
@@ -1941,48 +1941,48 @@
     "attributes" : [ "object", "someValues" ],
     "id" : "84"
   }, {
-    "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#has_stars",
+    "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_hotel",
     "baseIri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism",
-    "range" : "0",
+    "range" : "62",
     "label" : {
-      "IRI-based" : "has_stars",
-      "en" : "has_starts"
+      "IRI-based" : "rate_hotel",
+      "en" : "rate_hotel"
     },
     "domain" : "12",
     "comment" : {
-      "en" : "This object property provides the stars of a hotel"
+      "en" : "This property of object facilitates the valuation of a hotel"
     },
     "attributes" : [ "object", "someValues" ],
     "id" : "85"
   }, {
     "range" : "83",
     "domain" : "40",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "86"
   }, {
     "range" : "82",
     "domain" : "40",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "87"
   }, {
     "range" : "83",
     "domain" : "89",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "88"
   }, {
     "range" : "82",
     "domain" : "89",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "90"
   }, {
     "range" : "89",
     "domain" : "40",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "91"
   }, {
     "range" : "83",
     "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "92"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#name_start",
@@ -2015,32 +2015,32 @@
   }, {
     "range" : "82",
     "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "97"
   }, {
     "range" : "59",
     "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "98"
   }, {
     "range" : "59",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "99"
   }, {
     "range" : "89",
     "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "100"
   }, {
     "range" : "40",
     "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "101"
   }, {
     "range" : "56",
     "domain" : "57",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "102"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#averageprice_transport",
@@ -2050,7 +2050,7 @@
       "IRI-based" : "averageprice_transport",
       "en" : "averageprice_transport"
     },
-    "domain" : "54",
+    "domain" : "52",
     "comment" : {
       "en" : "Average price of transport"
     },
@@ -2059,32 +2059,32 @@
   }, {
     "range" : "60",
     "domain" : "57",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "104"
   }, {
     "range" : "56",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "105"
   }, {
     "range" : "59",
     "domain" : "57",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "106"
   }, {
     "range" : "1",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "107"
   }, {
     "range" : "1",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "108"
   }, {
     "range" : "1",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "109"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#has_restaurants",
@@ -2112,7 +2112,7 @@
     "comment" : {
       "en" : "Value that is determined in the ratings and stars of a hotel"
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "113"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#has_attractions",
@@ -2136,7 +2136,7 @@
       "IRI-based" : "name_transport",
       "en" : "name_transport"
     },
-    "domain" : "54",
+    "domain" : "52",
     "comment" : {
       "en" : "Identifying name of Transport"
     },
@@ -2150,7 +2150,7 @@
       "IRI-based" : "id_transport",
       "en" : "id_transport"
     },
-    "domain" : "54",
+    "domain" : "52",
     "comment" : {
       "en" : "Class identifier transport"
     },
@@ -2199,24 +2199,10 @@
     "attributes" : [ "datatype" ],
     "id" : "129"
   }, {
-    "range" : "54",
+    "range" : "52",
     "domain" : "77",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "130"
-  }, {
-    "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#date",
-    "baseIri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism",
-    "range" : "128",
-    "label" : {
-      "IRI-based" : "date",
-      "en" : "date"
-    },
-    "domain" : "21",
-    "comment" : {
-      "en" : "Date when an event occurs"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "131"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_attraction",
     "baseIri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism",
@@ -2230,26 +2216,40 @@
       "en" : "This property of object facilitates the valuation of an attraction"
     },
     "attributes" : [ "object" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#date",
+    "baseIri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism",
+    "range" : "128",
+    "label" : {
+      "IRI-based" : "date",
+      "en" : "date"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Date when an event occurs"
+    },
+    "attributes" : [ "datatype" ],
     "id" : "132"
   }, {
     "range" : "77",
     "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "133"
   }, {
     "range" : "16",
     "domain" : "135",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "134"
   }, {
     "range" : "16",
     "domain" : "44",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "136"
   }, {
     "range" : "77",
     "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "137"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#has_events",
@@ -2268,52 +2268,52 @@
   }, {
     "range" : "77",
     "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "139"
   }, {
     "range" : "77",
     "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "140"
   }, {
     "range" : "3",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "141"
   }, {
     "range" : "7",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "142"
   }, {
     "range" : "5",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "143"
   }, {
     "range" : "3",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "144"
   }, {
     "range" : "7",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "145"
   }, {
     "range" : "3",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "146"
   }, {
     "range" : "7",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "147"
   }, {
     "range" : "7",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "148"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#rate_hotel",
@@ -2346,27 +2346,27 @@
   }, {
     "range" : "4",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "151"
   }, {
     "range" : "5",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "152"
   }, {
     "range" : "21",
     "domain" : "83",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "153"
   }, {
     "range" : "21",
     "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "154"
   }, {
     "range" : "77",
     "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "155"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#name_restaurant",
@@ -2399,27 +2399,27 @@
   }, {
     "range" : "21",
     "domain" : "89",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "158"
   }, {
     "range" : "12",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "159"
   }, {
     "range" : "12",
     "domain" : "59",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "160"
   }, {
     "range" : "21",
     "domain" : "40",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "161"
   }, {
     "range" : "21",
     "domain" : "82",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "162"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#operated_by",
@@ -2429,7 +2429,7 @@
       "IRI-based" : "operated_by",
       "en" : "operated_by"
     },
-    "domain" : "54",
+    "domain" : "52",
     "comment" : {
       "en" : "This object property provides the company by which a transport is operated."
     },
@@ -2438,12 +2438,12 @@
   }, {
     "range" : "12",
     "domain" : "58",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "164"
   }, {
     "range" : "12",
     "domain" : "57",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "165"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#location",
@@ -2457,7 +2457,7 @@
     "comment" : {
       "en" : "Geographical location of the city"
     },
-    "attributes" : [ "datatype", "functional" ],
+    "attributes" : [ "functional", "datatype" ],
     "id" : "166"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#pricenight",
@@ -2476,22 +2476,22 @@
   }, {
     "range" : "12",
     "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "168"
   }, {
     "range" : "1",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "169"
   }, {
     "range" : "1",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "170"
   }, {
     "range" : "2",
     "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "171"
   }, {
     "iri" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#name_event",
@@ -2510,7 +2510,7 @@
   }, {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "173"
   } ]
 }

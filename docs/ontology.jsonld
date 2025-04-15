@@ -399,23 +399,23 @@
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "tourism"
   } ],
-  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:contributor" : [ {
+  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:contributor" : [ {
     "@language" : "en",
     "@value" : "Raúl Ríos Redondo and José María Aguirre Carbonero"
   } ],
-  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:created" : [ {
+  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2025-04-04T18:00:00"
   } ],
-  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:creator" : [ {
+  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:creator" : [ {
     "@language" : "en",
     "@value" : "Raúl Ríos Redondo and José María Aguirre Carbonero"
   } ],
-  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:description" : [ {
+  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:description" : [ {
     "@language" : "en",
     "@value" : "This is a Ontology provide terms related with tourist and recomendatios including cities, restaurants, events, touristic attactions and transportations."
   } ],
-  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:title" : [ {
+  "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:title" : [ {
     "@language" : "en",
     "@value" : "Smart Tourism Ontology and Touristic recomendations"
   } ],
@@ -1906,19 +1906,19 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:contributor",
+  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:created",
+  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:created",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:creator",
+  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:description",
+  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dct:title",
+  "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#dc:title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.semanticweb.org/kowalski333/ontologies/2025/3/tourism#has_attractions",
